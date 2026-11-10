@@ -1,0 +1,463 @@
+/* =========================
+   COFNA ADMIN
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f7efe4;
+    color: #4b2e20;
+}
+
+/* =========================
+   LAYOUT
+   ========================= */
+
+.admin-layout {
+    min-height: 100vh;
+    display: flex;
+}
+
+/* =========================
+   SIDEBAR
+   ========================= */
+
+.sidebar {
+    width: 245px;
+    min-height: 100vh;
+    background: linear-gradient(
+        180deg,
+        #4b2e20,
+        #5f3c29
+    );
+    color: white;
+    padding: 28px 18px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.logo-icon {
+    font-size: 32px;
+}
+
+.logo h2 {
+    margin: 5px 0 3px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+.menu-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin: 20px 12px 8px;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    padding: 13px 14px;
+    margin: 5px 0;
+    border-radius: 12px;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #9a6b4d;
+}
+
+.sidebar-icon {
+    width: 24px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sidebar-line {
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    margin: 20px 10px;
+}
+
+/* =========================
+   MAIN
+   ========================= */
+
+.main {
+    margin-left: 245px;
+    width: calc(100% - 245px);
+    min-height: 100vh;
+    padding: 28px 40px;
+}
+
+/* =========================
+   TOPBAR
+   ========================= */
+
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.admin-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 9px 14px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(75,46,32,0.08);
+    font-size: 13px;
+}
+
+.user-icon {
+    width: 32px;
+    height: 32px;
+    background: #ead7c4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
+   WELCOME CARD
+   ========================= */
+
+.welcome-card {
+    background: linear-gradient(
+        135deg,
+        #fffaf4,
+        #f5e5d3
+    );
+    border-radius: 25px;
+    padding: 45px;
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 12px 35px rgba(75,46,32,0.08);
+    overflow: hidden;
+    position: relative;
+}
+
+.welcome-content {
+    max-width: 650px;
+}
+
+.coffee-icon {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.welcome-content h1 {
+    font-size: 38px;
+    margin: 0 0 12px;
+    color: #3e2418;
+}
+
+.welcome-content p {
+    color: #765d4c;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.welcome-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: #6f4932;
+    color: white;
+}
+
+.btn-secondary {
+    background: #ead7c4;
+    color: #4b2e20;
+}
+
+.coffee-decoration {
+    font-size: 150px;
+    opacity: 0.9;
+    margin-right: 40px;
+}
+
+/* =========================
+   PAGE TITLE
+   ========================= */
+
+.page-title {
+    margin-bottom: 22px;
+}
+
+.page-title h1 {
+    margin: 0 0 6px;
+    font-size: 30px;
+}
+
+.page-title p {
+    margin: 0;
+    color: #806b5b;
+}
+
+/* =========================
+   CONTENT CARD
+   ========================= */
+
+.content-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(75,46,32,0.07);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* =========================
+   BUTTON TAMBAH
+   ========================= */
+
+.btn-add {
+    background: #6f4932;
+    color: white;
+    text-decoration: none;
+    padding: 11px 17px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.btn-add:hover {
+    background: #573622;
+}
+
+/* =========================
+   TABLE
+   ========================= */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #f4e7d8;
+    color: #5b3a28;
+    padding: 13px;
+    text-align: left;
+    font-size: 13px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee5dc;
+    font-size: 13px;
+}
+
+tr:hover {
+    background: #fffaf5;
+}
+
+.menu-image {
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.category {
+    display: inline-block;
+    background: #f0dfcd;
+    color: #70482f;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.action {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    margin: 2px;
+}
+
+.edit {
+    background: #ead7c4;
+    color: #573622;
+}
+
+.delete {
+    background: #f8dada;
+    color: #a33c3c;
+}
+
+/* =========================
+   FORM
+   ========================= */
+
+.form-card {
+    max-width: 800px;
+    background: white;
+    border-radius: 22px;
+    padding: 35px;
+    box-shadow: 0 8px 25px rgba(75,46,32,0.07);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ded2c5;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    background: #fffdfb;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #8b6043;
+    box-shadow: 0 0 0 3px rgba(139,96,67,0.1);
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.btn-save {
+    border: none;
+    background: #6f4932;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-cancel {
+    background: #eee5dc;
+    color: #4b2e20;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        width: 190px;
+    }
+
+    .main {
+        margin-left: 190px;
+        width: calc(100% - 190px);
+        padding: 20px;
+    }
+
+    .welcome-card {
+        padding: 30px;
+    }
+
+    .coffee-decoration {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .admin-layout {
+        display: block;
+    }
+
+    .main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+}

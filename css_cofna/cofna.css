@@ -1,0 +1,6598 @@
+/* =========================================
+   HOME PAGE
+========================================= */
+
+
+/* HERO */
+
+.home-hero {
+    min-height: 490px;
+    padding: 65px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+
+.hero-text {
+
+    width: 50%;
+
+}
+
+
+.welcome-label {
+
+    color: #80502d;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+
+
+.hero-text h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 56px;
+
+    line-height: 1.08;
+
+    color: #4a2917;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero-text h1 span {
+
+    color: #bd7135;
+
+    font-style: italic;
+
+}
+
+
+.hero-text p {
+
+    max-width: 480px;
+
+    color: #705e50;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    margin-top: 28px;
+
+}
+
+
+.btn-primary {
+
+    text-decoration: none;
+
+    background: #5a321b;
+
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+
+.btn-primary span {
+
+    margin-left: 15px;
+
+}
+
+
+.btn-primary:hover {
+
+    background: #7a4825;
+
+    transform: translateY(-2px);
+
+}
+
+
+.btn-secondary {
+
+    text-decoration: none;
+
+    color: #5a321b;
+
+    border: 1px solid #b88c68;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    background: rgba(255,255,255,.3);
+
+    transition: .3s;
+
+}
+
+
+.btn-secondary:hover {
+
+    background: white;
+
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+
+    width: 45%;
+
+    height: 380px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.hero-circle {
+
+    position: absolute;
+
+    width: 360px;
+
+    height: 360px;
+
+    border-radius: 50%;
+
+    background: #d5a77f;
+
+    opacity: .55;
+
+}
+
+
+.hero-image img {
+
+    position: relative;
+
+    width: 280px;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    transform: rotate(3deg);
+
+    box-shadow:
+
+        0 20px 45px rgba(65,35,15,.25);
+
+}
+
+
+.coffee-beans {
+
+    position: absolute;
+
+    right: 5%;
+
+    bottom: 45px;
+
+    color: #573018;
+
+    font-size: 20px;
+
+    letter-spacing: 5px;
+
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features {
+
+    width: 88%;
+
+    max-width: 1350px;
+
+    margin: -25px auto 0;
+
+    position: relative;
+
+    z-index: 2;
+
+    background: rgba(255,253,250,.96);
+
+    border: 1px solid #eaded4;
+
+    border-radius: 22px;
+
+    padding: 20px 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    box-shadow:
+
+        0 8px 25px rgba(80,45,20,.08);
+
+}
+
+
+.feature {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 10px 20px;
+
+    border-right: 1px solid #eaded4;
+
+}
+
+
+.feature:last-child {
+
+    border-right: none;
+
+}
+
+
+.feature-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    min-width: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f3e4d6;
+
+    font-size: 23px;
+
+}
+
+
+.feature h3 {
+
+    font-size: 14px;
+
+    margin-bottom: 6px;
+
+    color: #4a2b19;
+
+}
+
+
+.feature p {
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #79675a;
+
+}
+
+
+/* =========================================
+   BEST SELLER
+========================================= */
+
+.best-seller {
+
+    width: 88%;
+
+    max-width: 1350px;
+
+    margin: 50px auto;
+
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 20px;
+
+}
+
+
+.section-heading h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    color: #4a2917;
+
+}
+
+
+.heading-line {
+
+    width: 45px;
+
+    height: 3px;
+
+    background: #7c4825;
+
+    margin-top: 8px;
+
+}
+
+
+.section-heading a {
+
+    color: #5a321b;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+/* PRODUCT GRID */
+
+.product-grid {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(4, 1fr);
+
+    gap: 22px;
+
+}
+
+
+.product-card {
+
+    background: white;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    border: 1px solid #eee4dc;
+
+    box-shadow:
+
+        0 5px 20px rgba(70,40,20,.06);
+
+    transition: .3s;
+
+}
+
+
+.product-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+
+        0 12px 28px rgba(70,40,20,.12);
+
+}
+
+
+.product-image {
+
+    height: 210px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #ead8c7;
+
+}
+
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.heart-btn {
+
+    position: absolute;
+
+    top: 12px;
+
+    right: 12px;
+
+    width: 35px;
+
+    height: 35px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.9);
+
+    color: #5a321b;
+
+    font-size: 19px;
+
+    cursor: pointer;
+
+}
+
+
+.heart-btn.active {
+
+    color: #5a321b;
+
+}
+
+
+.product-info {
+
+    padding: 15px;
+
+}
+
+
+.product-info h3 {
+
+    color: #4a2b19;
+
+    font-size: 16px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.product-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.product-bottom strong {
+
+    color: #9b571e;
+
+}
+
+
+.product-add {
+
+    width: 32px;
+
+    height: 32px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #5a321b;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+}
+
+
+.product-add:hover {
+
+    background: #7a4825;
+
+    transform: scale(1.08);
+
+}
+
+
+/* =========================================
+   COFNA HIGHLIGHT
+========================================= */
+
+.cofna-highlight {
+    width: 88%;
+    max-width: 1350px;
+
+    margin: 0 auto 60px;
+
+    min-height: 150px;
+
+    padding: 28px 35px;
+
+    border-radius: 20px;
+
+    background: #f1dfcd;
+
+    border: 1px solid #ead4c2;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+/* ICON */
+
+.highlight-icon {
+
+    width: 70px;
+    height: 70px;
+
+    min-width: 70px;
+
+    border-radius: 50%;
+
+    background: #fffaf6;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 32px;
+
+    box-shadow:
+        0 5px 15px rgba(80, 45, 20, 0.08);
+}
+
+
+/* TEXT */
+
+.highlight-text {
+
+    flex: 1;
+
+}
+
+
+.highlight-text > span {
+
+    color: #9b571e;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.highlight-text h2 {
+
+    font-family: Georgia, serif;
+
+    color: #4a2917;
+
+    font-size: 25px;
+
+    margin: 7px 0;
+
+}
+
+
+.highlight-text h2 em {
+
+    color: #bd7135;
+
+    font-weight: normal;
+
+}
+
+
+.highlight-text p {
+
+    color: #705e50;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+
+/* BUTTON */
+
+.highlight-btn {
+
+    text-decoration: none;
+
+    background: #5a321b;
+
+    color: white;
+
+    padding: 14px 24px;
+
+    border-radius: 28px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+
+.highlight-btn:hover {
+
+    background: #7a4825;
+
+    transform: translateY(-2px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .cofna-highlight {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 25px;
+
+    }
+
+    .highlight-btn {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+}
+
+/* =========================================
+   CART COUNT
+========================================= */
+
+#cart-count {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 19px;
+
+    height: 19px;
+
+    padding: 0 5px;
+
+    border-radius: 20px;
+
+    background: #9b571e;
+
+    color: white;
+
+    font-size: 11px;
+
+    margin-left: 4px;
+
+}
+
+
+/* =========================================
+   HOME RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .home-hero {
+
+        padding: 50px 6%;
+
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 43px;
+
+    }
+
+
+    .features {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+    .feature {
+
+        border-right: none;
+
+        border-bottom: 1px solid #eaded4;
+
+    }
+
+
+    .product-grid {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .home-hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 50px 7%;
+
+    }
+
+
+    .hero-text {
+
+        width: 100%;
+
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .hero-text p {
+
+        margin: auto;
+
+    }
+
+
+    .hero-buttons {
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .hero-image {
+
+        width: 100%;
+
+        height: 300px;
+
+        margin-top: 25px;
+
+    }
+
+
+    .hero-circle {
+
+        width: 260px;
+
+        height: 260px;
+
+    }
+
+
+    .hero-image img {
+
+        width: 210px;
+
+        height: 270px;
+
+    }
+
+
+    .features {
+
+        grid-template-columns: 1fr;
+
+        margin-top: 20px;
+
+    }
+
+
+    .feature {
+
+        border-bottom: 1px solid #eaded4;
+
+    }
+
+
+    .feature:last-child {
+
+        border-bottom: none;
+
+    }
+
+
+    .product-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .product-image {
+
+        height: 160px;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .product-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+/* ========================================
+   GLOBAL
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fcf8f4;
+    color: #4a2d1b;
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 78px;
+    padding: 0 5%;
+
+    display: flex;
+    align-items: center;
+
+    background: #fffdfb;
+
+    border-bottom: 1px solid #eaded3;
+
+    position: relative;
+    z-index: 100;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    color: #633b27;
+
+    white-space: nowrap;
+
+    margin-right: 55px;
+}
+
+.logo span {
+    color: #a96f4c;
+}
+
+
+/* =========================
+   NAV MENU
+========================= */
+
+
+.nav-menu {
+    flex: 0 1 auto;
+    gap: 20px;
+}
+
+
+.nav-menu a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 12px 16px;
+
+    border-radius: 28px;
+
+    color: #4b291b;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: all .25s ease;
+}
+
+
+/* HOVER */
+
+.nav-menu a:hover {
+    background: #f8eadc;
+
+    color: #633b27;
+}
+
+
+/* MENU YANG SEDANG AKTIF */
+
+.nav-menu a.active {
+    background: #f4e4d4;
+
+    color: #633b27;
+}
+
+
+/* =========================
+   CART NUMBER
+========================= */
+
+.cart-count {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 22px;
+    height: 22px;
+
+    padding: 0 6px;
+
+    border-radius: 50%;
+
+    background: #a96f4c;
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   LOGIN / LOGOUT
+========================= */
+
+.nav-auth {
+    display: flex;
+    align-items: center;
+
+    margin-left: 15px;
+}
+
+
+.login-btn,
+.logout-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 11px 20px;
+
+    border: 1.5px solid #6b3e23;
+
+    border-radius: 30px;
+
+    background: transparent;
+
+    color: #6b3e23 !important;
+
+    text-decoration: none !important;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition: all .25s ease;
+}
+
+
+.login-btn:hover,
+.logout-btn:hover {
+
+    background: #ebbda1;
+
+    color: white !important;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 15px
+        rgba(107, 62, 35, .18);
+}
+
+/* =================================
+   HOME BANNER
+================================= */
+
+/* =================================
+   HOME BANNER
+================================= */
+
+.home-banner {
+    position: relative;
+
+    min-height: 510px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 8%;
+
+    overflow: hidden;
+
+    /* BANNER 1 */
+    background-image: url("../image_cofna/cofna-banner1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* LAPISAN TRANSPARAN AGAR TULISAN TERBACA */
+
+.hero-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(250, 241, 230, 0.75) 0%,
+        rgba(250, 241, 230, 0.45) 40%,
+        rgba(250, 241, 230, 0.10) 75%,
+        rgba(250, 241, 230, 0) 100%
+    );
+
+    z-index: 1;
+}
+
+
+/* TULISAN HOME */
+
+.home-banner .hero-text {
+    position: relative;
+
+    z-index: 2;
+
+    width: 52%;
+}
+
+
+/* SEMBUNYIKAN GAMBAR HERO LAMA */
+
+.home-banner .hero-image {
+    display: none;
+}
+
+/* =================================
+   MENU BANNER
+================================= */
+
+.menu-banner {
+    position: relative;
+
+    min-height: 400px;
+
+    background-image: url("../image_cofna/cofna-banner2.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 8%;
+
+    overflow: hidden;
+}
+
+
+.menu-banner-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(250, 241, 230, 0.94) 0%,
+        rgba(250, 241, 230, 0.78) 45%,
+        rgba(250, 241, 230, 0.25) 100%
+    );
+
+}
+
+.menu-banner-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 550px;
+
+}
+
+.menu-banner-content span {
+
+    color: #9b571e;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+.menu-banner-content h1 {
+
+    font-family: Georgia, serif;
+
+    color: #4a2917;
+
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    margin: 12px 0;
+
+}
+
+
+.menu-banner-content h1 em {
+
+    color: #bd7135;
+
+}
+
+/* ========================================
+   MENU CONTAINER
+======================================== */
+
+.menu-container {
+    width: 88%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 35px 0 60px;
+}
+
+
+/* ========================================
+   CATEGORY
+======================================== */
+
+.category-wrapper {
+    width: 70%;
+
+    margin: 0 auto 28px;
+
+    padding: 5px;
+
+    border: 2px solid #eaded4;
+
+    border-radius: 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    background: #fffaf7;
+}
+
+.category-btn {
+    flex: 1;
+
+    border: none;
+
+    background: transparent;
+
+    color: #553421;
+
+    padding: 13px 20px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.category-btn:hover {
+    background: #f3e5d8;
+}
+
+.category-btn.active {
+    background: #5a321b;
+
+    color: white;
+}
+
+
+/* ========================================
+   MENU GRID
+======================================== */
+
+.menu-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+/* ========================================
+   MENU CARD
+======================================== */
+
+.menu-card {
+    background: white;
+
+    border: 1px solid #eee5df;
+
+    border-radius: 18px;
+
+    padding: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    min-height: 165px;
+
+    box-shadow:
+        0 5px 20px rgba(80, 45, 20, 0.06);
+
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(80, 45, 20, 0.1);
+}
+
+
+/* ========================================
+   GAMBAR
+======================================== */
+
+.menu-image {
+    width: 145px;
+
+    min-width: 145px;
+
+    height: 145px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    background: #ead8c7;
+}
+
+.menu-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ========================================
+   INFO MENU
+======================================== */
+
+.menu-info {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 140px;
+}
+
+.menu-title {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.menu-title h3 {
+    font-size: 18px;
+
+    color: #4a2b19;
+}
+
+.menu-info p {
+    font-size: 13px;
+
+    color: #705e50;
+
+    line-height: 1.5;
+
+    margin-top: 8px;
+
+    max-width: 220px;
+}
+
+
+/* ========================================
+   FAVORITE BUTTON
+======================================== */
+
+.favorite-btn {
+    border: none;
+
+    background: transparent;
+
+    color: #4a2b19;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    line-height: 1;
+
+    transition: 0.2s;
+}
+
+.favorite-btn:hover {
+    transform: scale(1.15);
+}
+
+.favorite-btn.active {
+    color: #5a321b;
+}
+
+
+/* ========================================
+   HARGA + ADD
+======================================== */
+
+.menu-bottom {
+    margin-top: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.menu-bottom strong {
+    color: #9b571e;
+
+    font-size: 16px;
+}
+
+.add-btn {
+    width: 34px;
+
+    height: 34px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #5a321b;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.add-btn:hover {
+    transform: scale(1.1);
+
+    background: #7a4825;
+}
+
+
+/* =========================================
+   COFNA FOOTER
+========================================= */
+
+.cofna-footer {
+    background: #302015;
+    color: #f8eee5;
+
+    margin-top: 70px;
+}
+
+
+/* BAGIAN UTAMA */
+
+.footer-main {
+
+    width: 88%;
+    max-width: 1350px;
+
+    margin: auto;
+
+    padding: 45px 0;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1.3fr;
+
+    gap: 50px;
+
+}
+
+
+/* BRAND */
+
+.footer-brand h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+    color: #fff;
+
+}
+
+.footer-brand h2 span {
+
+    color: #c88750;
+
+}
+
+.footer-brand p {
+
+    color: #cdbeb2;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+}
+
+
+/* SOCIAL */
+
+.footer-social {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+.footer-social a {
+
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #725440;
+
+    border-radius: 50%;
+
+    color: #f8eee5;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: .3s;
+
+}
+
+.footer-social a:hover {
+
+    background: #c88750;
+
+    border-color: #c88750;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* KOLOM */
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+.footer-column h3 {
+
+    color: #fff;
+
+    font-size: 15px;
+
+    margin-bottom: 7px;
+
+}
+
+.footer-column a {
+
+    color: #cdbeb2;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: .2s;
+
+}
+
+.footer-column a:hover {
+
+    color: #d99a66;
+
+    transform: translateX(3px);
+
+}
+
+.footer-column p {
+
+    color: #cdbeb2;
+
+    font-size: 13px;
+
+    margin: 0;
+
+}
+
+
+/* COPYRIGHT */
+
+.footer-bottom {
+
+    border-top: 1px solid #4b3629;
+
+    width: 88%;
+
+    max-width: 1350px;
+
+    margin: auto;
+
+    padding: 18px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.footer-bottom p {
+
+    color: #9f8e81;
+
+    font-size: 11px;
+
+    margin: 0;
+
+}
+
+
+/* =========================================
+   FOOTER RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .footer-main {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px;
+
+    }
+
+    .footer-brand {
+
+        grid-column: 1 / -1;
+
+    }
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .footer-main {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* =========================================
+   KERANJANG COFNA
+========================================= */
+
+
+/* HEADER */
+
+/* =========================================
+   KERANJANG - BANNER
+========================================= */
+
+.cart-header {
+    position: relative;
+
+    min-height: 400px;
+
+    padding: 70px 8%;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image: url("../image_cofna/cofna-banner2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cart-header span {
+    color: #9b571e;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.cart-header h1 {
+
+    font-family: Georgia, serif;
+
+    color: #4a2917;
+
+    font-size: 46px;
+
+    margin: 12px 0;
+
+}
+
+
+.cart-header h1 em {
+
+    color: #bd7135;
+
+    font-weight: normal;
+
+}
+
+
+.cart-header p {
+
+    color: #705e50;
+
+    font-size: 14px;
+
+}
+
+
+/* CONTAINER */
+
+.cart-container {
+
+    width: 88%;
+
+    max-width: 1250px;
+
+    margin: 45px auto 70px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 350px;
+
+    gap: 30px;
+
+    align-items: start;
+
+}
+
+
+/* PRODUK */
+
+.cart-products {
+
+    background: #fff;
+
+    border: 1px solid #eaded4;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+}
+
+
+.cart-title {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+}
+
+
+.cart-title h2 {
+
+    color: #4a2917;
+
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+
+}
+
+
+.cart-title span {
+
+    color: #8b7768;
+
+    font-size: 13px;
+
+}
+
+
+/* ITEM KERANJANG */
+
+.cart-item {
+
+    display: grid;
+
+    grid-template-columns: 85px 1fr auto;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eee4dc;
+
+}
+
+
+.cart-item:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.cart-item-image {
+
+    width: 85px;
+
+    height: 85px;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    background: #f2e2d3;
+
+}
+
+
+.cart-item-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.cart-item-info h3 {
+
+    color: #4a2917;
+
+    font-size: 16px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.cart-item-price {
+
+    color: #a45d25;
+
+    font-size: 13px;
+
+}
+
+
+/* QUANTITY */
+
+.quantity-control {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 12px;
+
+}
+
+
+.quantity-control button {
+
+    width: 27px;
+
+    height: 27px;
+
+    border: 1px solid #d8c2b0;
+
+    background: #fff;
+
+    color: #5a321b;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+
+.quantity-control button:hover {
+
+    background: #f3e1cf;
+
+}
+
+
+.quantity-control span {
+
+    min-width: 20px;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+/* HARGA ITEM */
+
+.cart-item-total {
+
+    text-align: right;
+
+}
+
+
+.cart-item-total strong {
+
+    display: block;
+
+    color: #4a2917;
+
+    font-size: 14px;
+
+}
+
+
+.remove-item {
+
+    border: none;
+
+    background: none;
+
+    color: #a78d7a;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    margin-top: 8px;
+
+}
+
+
+.remove-item:hover {
+
+    color: #a44b32;
+
+}
+
+
+/* EMPTY */
+
+.empty-cart {
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+}
+
+
+.empty-cart-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: auto auto 15px;
+
+    border-radius: 50%;
+
+    background: #f3e1cf;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+
+}
+
+
+.empty-cart h3 {
+
+    color: #4a2917;
+
+    font-family: Georgia, serif;
+
+    margin-bottom: 8px;
+
+}
+
+
+.empty-cart p {
+
+    color: #806e61;
+
+    font-size: 13px;
+
+    margin-bottom: 22px;
+
+}
+
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+.cart-summary {
+
+    background: #fff;
+
+    border: 1px solid #eaded4;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    position: sticky;
+
+    top: 20px;
+
+}
+
+
+.cart-summary h2 {
+
+    color: #4a2917;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.summary-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+
+    color: #806e61;
+
+    font-size: 13px;
+
+}
+
+
+.summary-row strong {
+
+    color: #4a2917;
+
+}
+
+
+.summary-line {
+
+    height: 1px;
+
+    background: #eaded4;
+
+    margin: 20px 0;
+
+}
+
+
+.summary-total {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 22px;
+
+}
+
+
+.summary-total span {
+
+    color: #4a2917;
+
+    font-weight: 600;
+
+}
+
+
+.summary-total strong {
+
+    color: #a45d25;
+
+    font-size: 20px;
+
+}
+
+/* =========================================
+   TOMBOL CHECKOUT KERANJANG
+========================================= */
+
+.checkout-btn {
+    width: 100%;
+    border: none;
+    background: #5a321b;
+    color: #ffffff;
+
+    padding: 15px 20px;
+
+    border-radius: 30px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    background: #7a4825;
+    transform: translateY(-2px);
+}
+
+.checkout-btn span {
+    font-size: 17px;
+}
+
+.continue-shopping {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 18px;
+
+    color: #795238;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+.continue-shopping:hover {
+    color: #a45d25;
+}
+
+/* =========================================
+   CHECKOUT COFNA
+========================================= */
+
+.checkout-header {
+    min-height: 220px;
+    padding: 55px 8%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            #fddfccc7,
+            rgba(255, 251, 249, 0.35),
+            rgba(171, 171, 171, 0.1)
+        ),
+        url("../image_cofna/cofna-banner1.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+.checkout-header > div {
+    position: relative;
+    z-index: 2;
+}
+
+.checkout-header span {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #f1d2b6;
+}
+
+.checkout-header h1 {
+    margin: 10px 0 8px;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    line-height: 1.1;
+    color: white;
+}
+
+.checkout-header h1 em {
+    color: #e8b88d;
+    font-weight: normal;
+}
+
+.checkout-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #f5e9df;
+}
+
+
+/* CONTAINER */
+
+.checkout-container {
+    width: 88%;
+    max-width: 1150px;
+    margin: 45px auto 70px;
+
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 30px;
+
+    align-items: start;
+}
+
+
+/* FORM */
+
+.checkout-form {
+    background: #ffffff;
+    border: 1px solid #eaded4;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+
+.checkout-section-title {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+
+.checkout-section-title > span {
+    width: 35px;
+    height: 35px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #f3e1cf;
+    color: #8b4e23;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.checkout-section-title h2 {
+    color: #4a2917;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin: 0 0 4px;
+}
+
+
+.checkout-section-title p {
+    color: #806e61;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/* INPUT */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    color: #4a2917;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+.form-group label small {
+    color: #a28f81;
+    font-weight: normal;
+}
+
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 1px solid #dfcfc2;
+
+    background: #fffaf6;
+
+    border-radius: 10px;
+
+    padding: 13px 14px;
+
+    font-family: inherit;
+    font-size: 13px;
+
+    color: #4a2917;
+
+    outline: none;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    border-color: #bd7135;
+
+    background: #ffffff;
+
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* PEMBAYARAN */
+
+.payment-title {
+    margin-top: 35px;
+}
+
+
+.payment-options {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+}
+
+
+.payment-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    border: 1px solid #dfcfc2;
+
+    border-radius: 13px;
+
+    padding: 15px;
+
+    cursor: pointer;
+
+    background: #fffaf6;
+
+    transition: .2s;
+
+}
+
+
+.payment-card:hover {
+    border-color: #bd7135;
+}
+
+
+.payment-card:has(input:checked) {
+
+    border-color: #9b571e;
+
+    background: #f9eee4;
+
+}
+
+
+.payment-card input {
+    accent-color: #6b391d;
+}
+
+
+.payment-icon {
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: #f3e1cf;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+
+}
+
+
+.payment-card strong {
+
+    display: block;
+
+    color: #4a2917;
+
+    font-size: 13px;
+
+    margin-bottom: 3px;
+
+}
+
+
+.payment-card small {
+
+    color: #8b7768;
+
+    font-size: 10px;
+
+}
+
+
+/* INFO PEMBAYARAN */
+
+.payment-info {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 22px;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    background: #f9eee4;
+
+}
+
+
+.payment-info span {
+    font-size: 18px;
+}
+
+
+.payment-info p {
+
+    margin: 0;
+
+    color: #705e50;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+}
+
+
+/* RINGKASAN */
+
+.checkout-summary {
+
+    background: #ffffff;
+
+    border: 1px solid #eaded4;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    position: sticky;
+
+    top: 20px;
+
+}
+
+
+.checkout-summary h2 {
+
+    color: #4a2917;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.checkout-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 10px 0;
+
+}
+
+
+.checkout-item-image {
+    width: 55px;
+    height: 55px;
+}
+
+.checkout-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.checkout-item-info {
+    flex: 1;
+}
+
+
+.checkout-item-info h3 {
+
+    color: #4a2917;
+
+    font-size: 13px;
+
+    margin: 0 0 4px;
+
+}
+
+
+.checkout-item-info span {
+
+    color: #8b7768;
+
+    font-size: 11px;
+
+}
+
+
+.checkout-item-price {
+
+    color: #4a2917;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.checkout-divider {
+
+    height: 1px;
+
+    background: #eaded4;
+
+    margin: 15px 0;
+
+}
+
+
+.checkout-price-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 12px 0;
+
+    color: #806e61;
+
+    font-size: 13px;
+
+}
+
+
+.checkout-price-row strong {
+    color: #4a2917;
+}
+
+
+.checkout-grand-total {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.checkout-grand-total span {
+    color: #4a2917;
+    font-weight: 600;
+}
+
+
+.checkout-grand-total strong {
+
+    color: #a45d25;
+
+    font-size: 21px;
+
+}
+
+
+/* TOMBOL BAYAR */
+
+.place-order-btn {
+
+    width: 100%;
+
+    border: none;
+
+    background: #5a321b;
+
+    color: #ffffff;
+
+    padding: 15px;
+
+    border-radius: 28px;
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.place-order-btn:hover {
+
+    background: #7a4825;
+
+    transform: translateY(-2px);
+
+}
+
+
+.place-order-btn span {
+    margin-left: 10px;
+}
+
+
+.back-cart {
+
+    display: block;
+
+    text-align: center;
+
+    color: #795238;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    margin-top: 16px;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .checkout-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .checkout-summary {
+
+        position: static;
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .checkout-header h1 {
+        font-size: 34px;
+    }
+
+    .checkout-container {
+        width: 92%;
+    }
+
+    .checkout-form {
+        padding: 20px;
+    }
+
+    .payment-options {
+        grid-template-columns: 1fr;
+    }
+
+}
+.checkout-empty {
+    text-align: center;
+    padding: 30px 10px;
+    color: #806e61;
+    font-size: 13px;
+}
+
+.checkout-empty a {
+    color: #9b571e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.checkout-empty a:hover {
+    text-decoration: underline;
+}
+
+.checkout-item-image {
+    flex-shrink: 0;
+}
+
+/* =========================================
+   PEMBAYARAN COFNA
+========================================= */
+
+.payment-page {
+    min-height: calc(100vh - 80px);
+    background: #fbf7f3;
+    padding: 55px 20px 80px;
+}
+
+
+/* CONTAINER */
+
+.payment-container {
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+/* JUDUL */
+
+.payment-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.payment-heading span {
+    color: #9b571e;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.payment-heading h1 {
+    color: #4a2917;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.payment-heading h1 em {
+    color: #bd7135;
+    font-weight: normal;
+}
+
+.payment-heading p {
+    color: #806e61;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* TOTAL */
+
+.payment-total {
+    background: #f5e7d8;
+    border: 1px solid #ead4c2;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.payment-total p {
+    color: #806e61;
+    font-size: 13px;
+    margin: 0 0 8px;
+}
+
+.payment-total h2 {
+    color: #a45d25;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin: 0;
+}
+
+
+/* METODE PEMBAYARAN */
+
+.payment-method {
+    background: #ffffff;
+    border: 1px solid #eaded4;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.payment-method > h2 {
+    color: #4a2917;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    margin: 0 0 6px;
+}
+
+.payment-method > p {
+    color: #806e61;
+    font-size: 12px;
+    margin: 0 0 22px;
+}
+
+
+/* GRID */
+
+.payment-method-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+/* CARD PEMBAYARAN */
+
+.payment-method-card {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    border: 1px solid #dfcfc2;
+    border-radius: 14px;
+
+    padding: 17px;
+
+    background: #fffaf6;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.payment-method-card:hover {
+    border-color: #bd7135;
+    transform: translateY(-2px);
+}
+
+
+/* RADIO */
+
+.payment-method-card input {
+    accent-color: #6b391d;
+}
+
+
+/* ICON */
+
+.payment-method-icon {
+    width: 43px;
+    height: 43px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #f3e1cf;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+}
+
+
+/* TEKS */
+
+.payment-method-card strong {
+    display: block;
+
+    color: #4a2917;
+
+    font-size: 14px;
+
+    margin-bottom: 4px;
+}
+
+.payment-method-card small {
+    color: #8b7768;
+    font-size: 10px;
+}
+
+
+/* CARD TERPILIH */
+
+.payment-method-card:has(input:checked) {
+    border-color: #9b571e;
+    background: #f9eee4;
+    box-shadow: 0 3px 10px rgba(90, 50, 27, 0.08);
+}
+
+
+/* NOTICE */
+
+.payment-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #f9eee4;
+
+    border-radius: 12px;
+}
+
+.payment-notice span {
+    font-size: 18px;
+}
+
+.payment-notice p {
+    margin: 0;
+
+    color: #705e50;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* TOMBOL BAYAR */
+
+.pay-now-btn {
+    width: 100%;
+
+    border: none;
+
+    background: #5a321b;
+    color: #ffffff;
+
+    padding: 16px 20px;
+
+    border-radius: 30px;
+
+    margin-top: 22px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    transition: 0.3s;
+}
+
+.pay-now-btn:hover {
+    background: #7a4825;
+    transform: translateY(-2px);
+}
+
+.pay-now-btn span {
+    font-size: 17px;
+}
+
+
+/* KEMBALI */
+
+.back-payment {
+    display: block;
+    margin-top: 12px;
+    color: #633b27;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+.back-payment:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .payment-page {
+        padding: 40px 15px 60px;
+    }
+
+    .payment-container {
+        width: 95%;
+    }
+
+    .payment-heading h1 {
+        font-size: 34px;
+    }
+
+    .payment-method {
+        padding: 20px;
+    }
+
+    .payment-method-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================
+   PESANAN BERHASIL
+========================================= */
+
+.success-page {
+    min-height: calc(100vh - 80px);
+
+    background: #fbf7f3;
+
+    padding: 60px 20px 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.success-card {
+    width: 90%;
+    max-width: 600px;
+
+    background: #ffffff;
+
+    border: 1px solid #eaded4;
+
+    border-radius: 22px;
+
+    padding: 45px 40px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(74, 41, 23, 0.06);
+}
+
+
+/* ICON */
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #f3e1cf;
+
+    color: #6b391d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.success-label {
+    color: #9b571e;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.success-card h1 {
+    color: #4a2917;
+
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    margin: 12px 0;
+}
+
+
+.success-card h1 em {
+    color: #bd7135;
+
+    font-weight: normal;
+}
+
+
+.success-card > p {
+    color: #806e61;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    max-width: 430px;
+
+    margin: 0 auto 25px;
+}
+
+
+/* NOMOR PESANAN */
+
+.order-number {
+    background: #f9eee4;
+
+    border: 1px dashed #d7b99e;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+.order-number span {
+    display: block;
+
+    color: #806e61;
+
+    font-size: 11px;
+
+    margin-bottom: 7px;
+}
+
+
+.order-number strong {
+    color: #9b571e;
+
+    font-size: 22px;
+
+    letter-spacing: 1px;
+}
+
+
+/* INFO */
+
+.success-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 18px 0;
+}
+
+.success-info > div {
+    min-height: 72px;
+    padding: 15px 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background: #fffaf6;
+    border: 1px solid #ead8c9;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+}
+
+.success-info > div > span {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5e3d2;
+    border-radius: 50%;
+
+    font-size: 19px;
+}
+
+.success-info p {
+    margin: 0;
+    color: #806e61;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.success-info p strong {
+    display: block;
+    margin-top: 3px;
+
+    color: #4a2917;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* NOTICE */
+
+.success-notice {
+    display: flex;
+
+    gap: 10px;
+
+    text-align: left;
+
+    padding: 15px;
+
+    margin-bottom: 22px;
+
+    background: #f9eee4;
+
+    border-radius: 12px;
+}
+
+
+.success-notice span {
+    font-size: 17px;
+}
+
+
+.success-notice p {
+    color: #705e50;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* BUTTON */
+
+.success-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 15px;
+
+    background: #5a321b;
+
+    color: #ffffff;
+
+    border-radius: 28px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.success-btn:hover {
+    background: #7a4825;
+
+    transform: translateY(-2px);
+}
+
+
+.success-menu {
+    display: block;
+
+    margin-top: 15px;
+
+    color: #795238;
+
+    text-decoration: none;
+
+    font-size: 12px;
+}
+
+
+.success-menu:hover {
+    color: #a45d25;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .success-card {
+        padding: 35px 20px;
+    }
+
+    .success-card h1 {
+        font-size: 32px;
+    }
+
+    .success-info {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================
+   STATUS PESANAN
+========================================= */
+
+.order-status {
+    text-align: left;
+    background: #fffaf6;
+    border: 1px solid #eaded4;
+    border-radius: 16px;
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+.order-status h2 {
+    color: #4a2917;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+
+/* STEP */
+
+.status-step {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    opacity: 0.45;
+}
+
+.status-step.active {
+    opacity: 1;
+}
+
+
+/* ICON */
+
+.status-icon {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #eaded4;
+    color: #806e61;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+.status-step.active .status-icon {
+    background: #f3e1cf;
+    color: #7a4825;
+}
+
+
+/* TEXT */
+
+.status-text strong {
+    display: block;
+    color: #4a2917;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.status-text small {
+    color: #8b7768;
+    font-size: 10px;
+}
+
+
+/* GARIS */
+
+.status-line {
+    width: 2px;
+    height: 18px;
+
+    background: #eaded4;
+
+    margin: 4px 0 4px 18px;
+}
+
+/* =========================================
+   QRIS COFNA
+========================================= */
+
+.payment-qr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    padding-bottom: 30px;
+}
+
+.payment-qr img {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+}
+
+/* =========================================
+   TENTANG COFNA
+========================================= */
+
+.about-cofna {
+    padding: 100px 8%;
+    background: #fffaf5;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+/* =========================
+   BAGIAN KIRI
+========================= */
+
+.about-content {
+    max-width: 550px;
+}
+
+.about-label {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #a85d27;
+}
+
+.about-content h2 {
+    margin: 0 0 25px;
+
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+    line-height: 1.15;
+
+    color: #4d2919;
+}
+
+.about-content h2 em {
+    color: #b86d32;
+    font-weight: normal;
+}
+
+.about-description {
+    margin-bottom: 18px;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #745f52;
+}
+
+.about-button {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+
+    background: #663519;
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.about-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* =========================
+   FITUR
+========================= */
+
+.about-features {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.about-feature {
+    padding: 28px;
+
+    background: white;
+
+    border: 1px solid #eaded3;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    transition: 0.3s;
+}
+
+.about-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(90, 50, 25, 0.08);
+}
+
+.about-feature-icon {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    background: #f5e5d3;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+}
+
+.about-feature h3 {
+    margin: 0 0 8px;
+
+    font-size: 18px;
+
+    color: #4d2919;
+}
+
+.about-feature p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #806c60;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-cofna {
+        padding: 70px 6%;
+    }
+
+    .about-content h2 {
+        font-size: 38px;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-header {
+    padding: 100px 8%;
+    background: #f8eadb;
+    text-align: center;
+}
+
+.about-header > div {
+    max-width: 850px;
+    margin: auto;
+}
+
+.about-header span {
+    color: #a85d27;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-header h1 {
+    margin: 20px 0;
+
+    font-family: Georgia, serif;
+    font-size: 52px;
+    color: #4d2919;
+}
+
+.about-header h1 em {
+    color: #b86d32;
+    font-weight: normal;
+}
+
+.about-header p {
+    max-width: 650px;
+    margin: auto;
+
+    font-size: 17px;
+    line-height: 1.8;
+    color: #745f52;
+}
+
+
+/* =========================
+   ABOUT INTRO
+========================= */
+
+.about-page {
+    background: #fffaf5;
+}
+
+.about-intro {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 8%;
+
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-label {
+    color: #a85d27;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-intro-text h2 {
+    margin: 18px 0 25px;
+
+    font-family: Georgia, serif;
+    font-size: 46px;
+    color: #4d2919;
+}
+
+.about-intro-text h2 em {
+    color: #b86d32;
+    font-weight: normal;
+}
+
+.about-intro-text p {
+    color: #745f52;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   CARD COFNA
+========================= */
+
+.about-intro-card {
+    padding: 55px 30px;
+
+    text-align: center;
+
+    background: #f5e5d3;
+
+    border-radius: 30px;
+}
+
+.about-big-icon {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.about-intro-card h3 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #4d2919;
+}
+
+.about-intro-card p {
+    color: #745f52;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   VALUES
+========================= */
+
+.about-values {
+    padding: 90px 8%;
+    background: white;
+}
+
+.about-section-title {
+    text-align: center;
+    max-width: 700px;
+    margin: auto auto 50px;
+}
+
+.about-section-title span {
+    color: #a85d27;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-section-title h2 {
+    margin: 15px 0;
+
+    font-family: Georgia, serif;
+    font-size: 42px;
+    color: #4d2919;
+}
+
+.about-section-title p {
+    color: #745f52;
+}
+
+
+.about-value-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.about-value-card {
+    padding: 30px 24px;
+
+    border: 1px solid #eaded3;
+    border-radius: 22px;
+
+    background: #fffaf5;
+
+    transition: 0.3s;
+}
+
+.about-value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(90, 50, 25, 0.08);
+}
+
+.about-value-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5e5d3;
+    border-radius: 50%;
+
+    font-size: 25px;
+}
+
+.about-value-card h3 {
+    margin: 18px 0 10px;
+    color: #4d2919;
+}
+
+.about-value-card p {
+    color: #806c60;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* =========================
+   VISI MISI
+========================= */
+
+.about-vision {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 90px 8%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.vision-card,
+.mission-card {
+    padding: 45px;
+
+    border-radius: 25px;
+}
+
+.vision-card {
+    background: #663519;
+    color: white;
+}
+
+.mission-card {
+    background: #f5e5d3;
+    color: #4d2919;
+}
+
+.vision-card span,
+.mission-card span {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.vision-card h2 {
+    margin-top: 20px;
+
+    font-family: Georgia, serif;
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+.mission-card p {
+    margin-top: 20px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.about-cta {
+    margin: 0 8% 100px;
+    padding: 70px 30px;
+
+    text-align: center;
+
+    background: #f5e5d3;
+    border-radius: 30px;
+}
+
+.about-cta span {
+    color: #a85d27;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-cta h2 {
+    margin: 15px 0;
+
+    font-family: Georgia, serif;
+    font-size: 42px;
+    color: #4d2919;
+}
+
+.about-cta p {
+    color: #745f52;
+    margin-bottom: 25px;
+}
+
+.about-cta a {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    background: #663519;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .about-value-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-vision {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .about-header h1 {
+        font-size: 38px;
+    }
+
+    .about-intro-text h2 {
+        font-size: 36px;
+    }
+
+    .about-value-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cta h2 {
+        font-size: 34px;
+    }
+
+}
+
+/* =========================================
+   COFNA - ABOUT PAGE NEW DESIGN
+========================================= */
+
+
+/* =========================
+   HERO
+========================= */
+
+.about-hero {
+    min-height: 570px;
+
+    padding: 80px 9%;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            #f4dcc3 0%,
+            transparent 35%
+        ),
+        #fff8f1;
+}
+
+.about-hero-content {
+    width: 55%;
+    max-width: 650px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.about-eyebrow {
+    color: #a85d27;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.about-hero h1 {
+    margin: 20px 0;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 1.05;
+
+    color: #472719;
+}
+
+.about-hero h1 em {
+    color: #b96d32;
+    font-weight: normal;
+}
+
+.about-hero p {
+    max-width: 560px;
+
+    color: #806b5d;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.about-hero-buttons {
+    margin-top: 30px;
+
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.about-main-btn,
+.about-outline-btn {
+    padding: 14px 24px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.about-main-btn {
+    background: #633519;
+    color: white;
+}
+
+.about-main-btn:hover {
+    transform: translateY(-3px);
+}
+
+.about-outline-btn {
+    border: 1px solid #b88b68;
+    color: #633519;
+}
+
+.about-outline-btn:hover {
+    background: #f5e5d3;
+}
+
+
+/* =========================
+   COFFEE DECORATION
+========================= */
+
+/* =========================
+   LOGO COFNA - ABOUT HERO
+========================= */
+
+.about-coffee-decoration {
+    position: relative;
+    width: 520px;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Lingkaran belakang logo */
+.coffee-circle {
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    background: #ead2b7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    box-shadow: 0 20px 45px rgba(92, 50, 25, 0.12);
+}
+
+/* Logo COFNA */
+.about-logo {
+    width: 330px;
+    height: 330px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+/* Efek hover */
+.coffee-circle:hover .about-logo {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   DEKORASI BIJI KOPI
+========================= */
+
+.floating-bean {
+    position: absolute;
+
+    width: 22px;
+    height: 12px;
+
+    background: #8a4d28;
+
+    border-radius: 50%;
+
+    transform: rotate(-35deg);
+}
+
+.floating-bean::after {
+    content: "";
+
+    position: absolute;
+
+    width: 14px;
+    height: 2px;
+
+    background: #e7c3a0;
+
+    top: 5px;
+    left: 4px;
+
+    transform: rotate(-35deg);
+
+    border-radius: 50%;
+}
+
+.bean-one {
+    top: 65px;
+    right: 20px;
+}
+
+.bean-two {
+    bottom: 70px;
+    right: 50px;
+}
+
+
+/* =========================
+   BINTANG
+========================= */
+
+.floating-star {
+    position: absolute;
+
+    color: #b5672b;
+
+    font-size: 30px;
+
+    animation: starFloat 3s ease-in-out infinite;
+}
+
+.star-one {
+    top: 100px;
+    left: 40px;
+}
+
+.star-two {
+    bottom: 80px;
+    right: 5px;
+
+    font-size: 27px;
+
+    animation-delay: 1s;
+}
+
+
+@keyframes starFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+/* =========================
+   STATISTICS
+========================= */
+
+.about-stats {
+    max-width: 1100px;
+
+    margin: -35px auto 0;
+
+    position: relative;
+    z-index: 5;
+
+    padding: 28px 40px;
+
+    background: white;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 50px rgba(70, 35, 15, 0.10);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    text-align: center;
+}
+
+.about-stat {
+    border-right: 1px solid #eaded3;
+}
+
+.about-stat:last-child {
+    border-right: none;
+}
+
+.about-stat strong {
+    display: block;
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    color: #633519;
+}
+
+.about-stat span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #90796b;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   STORY
+========================= */
+
+.about-story {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 120px 8%;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 90px;
+
+    align-items: center;
+}
+
+.story-image-bg {
+    min-height: 480px;
+
+    border-radius: 35px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #6b3b20,
+            #a9673a
+        );
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-shadow:
+        0 25px 60px rgba(70, 35, 15, 0.18);
+}
+
+.story-image-bg::before {
+    content: "";
+
+    width: 300px;
+    height: 300px;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 50%;
+
+    position: absolute;
+}
+
+.story-cup {
+    font-size: 110px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.story-image-bg span {
+    margin-top: 20px;
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.section-eyebrow {
+    color: #a85d27;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.story-content h2 {
+    margin: 18px 0 25px;
+
+    font-family: Georgia, serif;
+
+    font-size: 46px;
+    line-height: 1.2;
+
+    color: #4d2919;
+}
+
+.story-content h2 em {
+    color: #b96d32;
+
+    font-weight: normal;
+}
+
+.story-content > p {
+    color: #806c60;
+
+    line-height: 1.85;
+
+    margin-bottom: 18px;
+}
+
+.story-quote {
+    margin-top: 30px;
+
+    padding: 20px 25px;
+
+    border-left: 4px solid #b96d32;
+
+    background: #fff3e6;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.story-quote span {
+    font-family: Georgia, serif;
+
+    font-size: 50px;
+
+    color: #b96d32;
+}
+
+.story-quote p {
+    margin: 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    color: #633519;
+}
+
+
+/* =========================
+   WHY COFNA
+========================= */
+
+.about-why {
+    padding: 100px 8%;
+
+    background: #fff;
+}
+
+.about-section-heading {
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: 0 auto 55px;
+}
+
+.about-section-heading > span {
+    color: #a85d27;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.about-section-heading h2 {
+    margin: 15px 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 44px;
+
+    color: #4d2919;
+}
+
+.about-section-heading h2 em {
+    color: #b96d32;
+
+    font-weight: normal;
+}
+
+.about-section-heading p {
+    color: #806c60;
+
+    line-height: 1.7;
+}
+
+.why-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.why-card {
+    padding: 30px;
+
+    min-height: 290px;
+
+    border: 1px solid #eaded3;
+
+    border-radius: 24px;
+
+    background: #fffaf5;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: 0.35s;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 40px rgba(70, 35, 15, 0.10);
+}
+
+.why-card.featured {
+    background: #633519;
+
+    color: white;
+}
+
+.why-number {
+    position: absolute;
+
+    right: 20px;
+    top: 18px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    opacity: 0.4;
+}
+
+.why-icon {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 18px;
+
+    background: #f3dfc9;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+
+    margin-bottom: 25px;
+}
+
+.why-card h3 {
+    margin: 0 0 12px;
+
+    font-size: 19px;
+
+    color: #4d2919;
+}
+
+.why-card.featured h3 {
+    color: white;
+}
+
+.why-card p {
+    margin: 0;
+
+    color: #806c60;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+.why-card.featured p {
+    color: #eaded3;
+}
+
+
+/* =========================
+   VISI MISI
+========================= */
+
+.about-vm {
+    padding: 100px 8%;
+
+    background: #f8eadb;
+}
+
+.vm-heading {
+    max-width: 1100px;
+
+    margin: auto auto 45px;
+}
+
+.vm-heading > span {
+    color: #a85d27;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.vm-heading h2 {
+    margin: 15px 0 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 44px;
+
+    color: #4d2919;
+}
+
+.vm-heading h2 em {
+    color: #b96d32;
+
+    font-weight: normal;
+}
+
+.vm-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+}
+
+.vm-card {
+    padding: 40px;
+
+    border-radius: 28px;
+}
+
+.vm-card.vision {
+    background: #633519;
+
+    color: white;
+}
+
+.vm-card.mission {
+    background: white;
+
+    color: #4d2919;
+}
+
+.vm-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.vm-top > span {
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    opacity: 0.6;
+}
+
+.vm-top div {
+    font-size: 30px;
+}
+
+.vm-card h3 {
+    margin: 30px 0 15px;
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+}
+
+.vm-card p {
+    margin: 0;
+
+    line-height: 1.8;
+}
+
+.vm-card.vision p {
+    color: #eaded3;
+}
+
+.vm-card.mission p {
+    color: #806c60;
+}
+
+
+/* =========================
+   FINAL CTA
+========================= */
+
+.about-final {
+    margin: 90px 8%;
+
+    padding: 90px 30px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #8b522e,
+            #633519 60%
+        );
+
+    border-radius: 35px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    color: white;
+}
+
+.final-decoration {
+    position: absolute;
+
+    font-size: 150px;
+
+    opacity: 0.08;
+
+    right: 5%;
+    top: -30px;
+}
+
+.about-final > span {
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    color: #f2d5b7;
+}
+
+.about-final h2 {
+    margin: 18px 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 46px;
+}
+
+.about-final h2 em {
+    color: #f0c18f;
+
+    font-weight: normal;
+}
+
+.about-final p {
+    color: #eaded3;
+
+    margin-bottom: 30px;
+}
+
+.about-final a {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #633519;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.about-final a:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .about-hero-content {
+        width: 65%;
+    }
+
+    .coffee-circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .floating-cup {
+        width: 170px;
+        height: 170px;
+
+        font-size: 75px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .about-hero {
+        min-height: auto;
+
+        padding: 80px 7%;
+    }
+
+    .about-hero-content {
+        width: 100%;
+    }
+
+    .about-coffee-decoration {
+        display: none;
+    }
+
+    .about-stats {
+        margin: 0 6%;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px;
+    }
+
+    .about-stat {
+        border-right: none;
+    }
+
+    .about-story {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .vm-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .about-hero h1 {
+        font-size: 48px;
+    }
+
+    .about-hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .story-image-bg {
+        min-height: 350px;
+    }
+
+    .story-content h2,
+    .about-section-heading h2,
+    .vm-heading h2,
+    .about-final h2 {
+        font-size: 36px;
+    }
+
+    .about-final {
+        margin: 60px 6%;
+    }
+
+}
+
+/* =========================
+   LOGO COFNA - OUR STORY
+========================= */
+
+.story-logo {
+    width: 330px;
+    height: 330px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+
+    position: relative;
+    z-index: 2;
+
+    transition: transform 0.4s ease;
+
+    /* supaya logo tidak keluar dari lingkaran */
+    overflow: hidden;
+}
+
+/* Efek hover */
+.story-image-bg:hover .story-logo {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .story-logo {
+        width: 280px;
+        height: 280px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .story-logo {
+        width: 230px;
+        height: 230px;
+    }
+
+}
+
+/* =================================
+   LOGIN PAGE
+================================= */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f8efe5;
+
+    padding: 30px;
+}
+
+
+.login-box {
+    width: 100%;
+    max-width: 430px;
+
+    background: #ffffff;
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 20px 50px rgba(91, 48, 25, 0.12);
+
+    text-align: center;
+}
+
+
+.login-logo {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    background: #ead2b7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+}
+
+
+.login-box h1 {
+    margin: 0;
+
+    color: #5b3019;
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+}
+
+
+.login-subtitle {
+    color: #876b58;
+
+    margin-bottom: 30px;
+}
+
+
+.login-input {
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+
+.login-input label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+    color: #5b3019;
+}
+
+
+.login-input input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    border: 1px solid #d9bda3;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+
+.login-input input:focus {
+    border-color: #8a4d28;
+}
+
+
+.login-button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #6b3518;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.login-button:hover {
+    background: #8a4d28;
+}
+
+
+.login-error {
+    background: #f8dede;
+
+    color: #9b3333;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+
+.back-home {
+    display: inline-block;
+
+    margin-top: 22px;
+
+    color: #7b4627;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+/* =================================
+   ADMIN
+================================= */
+
+.admin-page {
+    min-height: 100vh;
+
+    background: #f8efe5;
+
+    padding: 50px;
+}
+
+
+.admin-container {
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.admin-header {
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 15px 40px rgba(91, 48, 25, 0.08);
+}
+
+
+.admin-label {
+    color: #b5672b;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+}
+
+
+.admin-header h1 {
+    color: #5b3019;
+
+    font-family: Georgia, serif;
+
+    margin: 8px 0;
+}
+
+
+.admin-header p {
+    color: #806b5c;
+}
+
+
+.admin-logout {
+    background: #6b3518;
+
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.admin-menu {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.admin-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 22px;
+
+    box-shadow: 0 15px 35px rgba(91, 48, 25, 0.08);
+}
+
+
+.admin-icon {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+
+.admin-card h2 {
+    color: #5b3019;
+
+    font-family: Georgia, serif;
+}
+
+
+.admin-card p {
+    color: #806b5c;
+
+    line-height: 1.6;
+}
+
+
+.admin-card button {
+    border: none;
+
+    background: #ead2b7;
+
+    color: #5b3019;
+
+    padding: 11px 18px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+
+    .admin-page {
+        padding: 20px;
+    }
+
+    .admin-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .admin-menu {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ================================
+   ADMIN DASHBOARD
+================================ */
+
+.admin-page {
+    min-height: 100vh;
+    background: #f8efe5;
+    padding: 50px 30px;
+}
+
+.admin-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.admin-header {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 15px 40px rgba(91, 48, 25, 0.08);
+}
+
+.admin-label {
+    color: #b5672b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.admin-header h1 {
+    color: #5b3019;
+    font-family: Georgia, serif;
+    margin: 0 0 10px;
+}
+
+.admin-header p {
+    color: #806b5c;
+}
+
+.admin-logout {
+    background: #6b3518;
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.admin-logout:hover {
+    background: #8a4d28;
+}
+
+
+/* ================================
+   CARD ADMIN
+================================ */
+
+.admin-menu {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.admin-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 22px;
+
+    box-shadow: 0 15px 35px rgba(91, 48, 25, 0.08);
+
+    transition: 0.3s;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+}
+
+.admin-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.admin-card h2 {
+    color: #5b3019;
+    font-family: Georgia, serif;
+}
+
+.admin-card p {
+    color: #806b5c;
+    line-height: 1.6;
+}
+
+.admin-card button {
+    border: none;
+
+    background: #ead2b7;
+
+    color: #5b3019;
+
+    padding: 11px 18px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.admin-card button:hover {
+    background: #d8b897;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 800px) {
+
+    .admin-page {
+        padding: 25px 15px;
+    }
+
+    .admin-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .admin-menu {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.admin-card-button {
+    display: inline-block;
+
+    border: none;
+
+    background: #ead2b7;
+
+    color: #5b3019;
+
+    padding: 11px 18px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.admin-card-button:hover {
+    background: #d8b897;
+}
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #6f4e37;
+}
+
+.payment-instruction {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #7a6253;
+}
+
+/* =========================
+   TOMBOL LOGOUT
+========================= */
+
+/* =========================
+   TOMBOL LOGOUT
+========================= */
+
+.logout-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 11px 20px;
+    margin-left: 10px;
+
+    border: 1.5px solid #6b3e23;
+    border-radius: 30px;
+
+    color: #6b3e23 !important;
+    background: transparent;
+
+    text-decoration: none !important;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+.logout-btn:hover {
+    background: #6b3e23;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(107, 62, 35, 0.20);
+}
+
+/* =========================================
+   COFNA NAVBAR FINAL
+========================================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .logo {
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   NAV MENU
+========================= */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+}
+
+
+/* SEMUA LINK NAVBAR */
+
+.nav-menu a,
+.nav-menu a:link,
+.nav-menu a:visited,
+.nav-menu a:hover,
+.nav-menu a:active {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 14px;
+
+    border-radius: 30px;
+
+    color: #633b27 !important;
+
+    text-decoration: none !important;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition: all 0.25s ease;
+}
+
+
+/* HOVER */
+
+.nav-menu a:hover {
+    color: #633b27 !important;
+
+    background: #f4e4d4 !important;
+}
+
+
+/* LINK YANG SEDANG AKTIF */
+
+.nav-menu a.nav-active,
+.nav-menu a.nav-active:link,
+.nav-menu a.nav-active:visited,
+.nav-menu a.nav-active:hover,
+.nav-menu a.nav-active:active {
+    color: #633b27 !important;
+
+    background: #f4e4d4 !important;
+
+    text-decoration: none !important;
+}
+
+
+/* =========================
+   CART COUNT
+========================= */
+
+.nav-menu #cart-count {
+    margin-left: 5px;
+}
+
+
+/* =========================
+   LOGIN & LOGOUT
+========================= */
+
+.nav-auth {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex-shrink: 0;
+}
+
+
+/* LOGIN */
+
+.nav-auth .login-btn,
+.nav-auth .login-btn:link,
+.nav-auth .login-btn:visited,
+.nav-auth .login-btn:hover,
+.nav-auth .login-btn:active {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 10px 16px;
+
+    border-radius: 30px;
+
+    color: #633b27 !important;
+
+    background: transparent;
+
+    border: 1.5px solid #633b27;
+
+    text-decoration: none !important;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: all 0.25s ease;
+}
+
+
+/* LOGIN HOVER */
+
+.nav-auth .login-btn:hover {
+    color: white !important;
+
+    background: #633b27 !important;
+}
+
+
+/* LOGOUT */
+
+.nav-auth .logout-btn,
+.nav-auth .logout-btn:link,
+.nav-auth .logout-btn:visited,
+.nav-auth .logout-btn:hover,
+.nav-auth .logout-btn:active {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 10px 16px;
+
+    border-radius: 30px;
+
+    color: white !important;
+
+    background: #633b27 !important;
+
+    border: 1.5px solid #633b27;
+
+    text-decoration: none !important;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: all 0.25s ease;
+}
+
+
+/* LOGOUT HOVER */
+
+.nav-auth .logout-btn:hover {
+    color: #633b27 !important;
+
+    background: #f4e4d4 !important;
+}
+/* =========================================
+   FIX NAVBAR LINK UNGU
+   WAJIB DI PALING BAWAH
+========================================= */
+
+.navbar .nav-menu a,
+.navbar .nav-menu a:link,
+.navbar .nav-menu a:visited,
+.navbar .nav-menu a:hover,
+.navbar .nav-menu a:active {
+    color: #633b27 !important;
+    text-decoration: none !important;
+}
+
+/* ACTIVE */
+.navbar .nav-menu a.nav-active,
+.navbar .nav-menu a.nav-active:link,
+.navbar .nav-menu a.nav-active:visited,
+.navbar .nav-menu a.nav-active:hover,
+.navbar .nav-menu a.nav-active:active {
+    color: #633b27 !important;
+    background: #f4e4d4 !important;
+    text-decoration: none !important;
+}
+
+/* LOGIN */
+.navbar .nav-auth a.login-btn,
+.navbar .nav-auth a.login-btn:link,
+.navbar .nav-auth a.login-btn:visited,
+.navbar .nav-auth a.login-btn:hover,
+.navbar .nav-auth a.login-btn:active {
+    color: #633b27 !important;
+    text-decoration: none !important;
+}
+
+/* LOGOUT */
+.navbar .nav-auth a.logout-btn,
+.navbar .nav-auth a.logout-btn:link,
+.navbar .nav-auth a.logout-btn:visited,
+.navbar .nav-auth a.logout-btn:hover,
+.navbar .nav-auth a.logout-btn:active {
+    color: white !important;
+    text-decoration: none !important;
+}
+/* =========================================
+   FINAL FIX NAVBAR
+========================================= */
+
+.navbar a,
+.navbar a:link,
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active {
+    text-decoration: none !important;
+}
+
+.navbar .nav-menu a,
+.navbar .nav-menu a:link,
+.navbar .nav-menu a:visited,
+.navbar .nav-menu a:hover,
+.navbar .nav-menu a:active {
+    color: #633b27 !important;
+}
+
+.navbar .nav-menu a.nav-active,
+.navbar .nav-menu a.nav-active:link,
+.navbar .nav-menu a.nav-active:visited,
+.navbar .nav-menu a.nav-active:hover,
+.navbar .nav-menu a.nav-active:active {
+    color: #633b27 !important;
+    background: #f4e4d4 !important;
+}
+
+.navbar .nav-auth .login-btn,
+.navbar .nav-auth .login-btn:link,
+.navbar .nav-auth .login-btn:visited,
+.navbar .nav-auth .login-btn:hover,
+.navbar .nav-auth .login-btn:active {
+    color: #633b27 !important;
+}
+
+.navbar .nav-auth .logout-btn,
+.navbar .nav-auth .logout-btn:link,
+.navbar .nav-auth .logout-btn:visited,
+.navbar .nav-auth .logout-btn:hover,
+.navbar .nav-auth .logout-btn:active {
+    color: white !important;
+}
+
+/* ===== NAVBAR COFNA ===== */
+.navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar .nav-menu a {
+    color: #65412f;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+/* Efek saat kursor diarahkan ke menu */
+.navbar .nav-menu a:hover {
+    color: #ffffff;
+    background-color: #6b3e26;
+    transform: translateY(-2px);
+}
+
+/* Menu yang sedang dibuka */
+.navbar .nav-menu a.active,
+.navbar .nav-menu a.nav-active {
+    color: #ffffff;
+    background-color: #6b3e26;
+    box-shadow: 0 3px 8px rgba(74, 42, 25, 0.15);
+}
+
+/* Angka jumlah keranjang */
+.navbar .nav-menu #cart-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    margin-left: 4px;
+    border-radius: 50%;
+    background-color: #c58a52;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar .nav-menu {
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    .navbar .nav-menu a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+/* ===== NAVBAR COFNA ===== */
+.navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar .nav-menu a {
+    color: #65412f;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+/* Efek saat kursor diarahkan ke menu */
+.navbar .nav-menu a:hover {
+    color: #ffffff;
+    background-color: #6b3e26;
+    transform: translateY(-2px);
+}
+
+/* Menu yang sedang dibuka */
+.navbar .nav-menu a.active,
+.navbar .nav-menu a.nav-active {
+    color: #ffffff;
+    background-color: #6b3e26;
+    box-shadow: 0 3px 8px rgba(74, 42, 25, 0.15);
+}
+
+/* Angka jumlah keranjang */
+.navbar .nav-menu #cart-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    margin-left: 4px;
+    border-radius: 50%;
+    background-color: #c58a52;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar .nav-menu {
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    .navbar .nav-menu a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+
+/* ===== COFNA PAYMENT: SIMPLE ===== */
+
+.payment-page {
+    padding: 45px 20px;
+    background: #fcf8f4;
+}
+
+.payment-container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.payment-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.payment-heading h1 {
+    color: #633b27;
+    font-size: clamp(28px, 4vw, 40px);
+    margin: 14px 0;
+}
+
+.payment-heading p {
+    color: #806b5c;
+    line-height: 1.6;
+}
+
+.payment-total {
+    background: #f4e4d4;
+    border: 1px solid #ead5c1;
+    border-radius: 14px;
+    padding: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-total p {
+    color: #806b5c;
+    margin: 0 0 8px;
+}
+
+.payment-total h2 {
+    color: #a45d2a;
+    font-size: 32px;
+    margin: 0;
+}
+
+.payment-method {
+    background: #ffffff;
+    border: 1px solid #eadfd5;
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 18px;
+}
+
+.payment-detail {
+    text-align: center;
+}
+
+.payment-detail h2 {
+    color: #633b27;
+    margin: 10px 0;
+}
+
+.payment-detail p {
+    color: #806b5c;
+    line-height: 1.6;
+}
+
+.payment-qr img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #eee0d4;
+    border-radius: 10px;
+}
+
+.payment-notice {
+    background: #f7ede3;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    color: #765744;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.payment-container .pay-now-btn {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    background: #633b27;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.payment-container .pay-now-btn:hover {
+    background: #805239;
+}
+
+.payment-container .pay-now-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.payment-container .back-payment {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    color: #633b27;
+    text-decoration: none;
+}
+
+.payment-container .back-payment:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .payment-page {
+        padding: 30px 15px;
+    }
+
+    .payment-method {
+        padding: 16px;
+    }
+
+    .payment-total h2 {
+        font-size: 28px;
+    }
+}
+
+/* Menghilangkan warna ungu pada link halaman pesanan berhasil */
+a,
+a:visited,
+a:hover,
+a:active {
+    color: #5b3828;
+    text-decoration: none;
+}
+
+/* Kalau link berupa tombol */
+.btn,
+button,
+a.btn {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.btn:visited,
+a.btn:hover,
+a.btn:active {
+    color: #ffffff;
+}
+
+/* =====================================
+   PERBAIKAN TOMBOL COFNA
+===================================== */
+
+/* Tombol dengan background cokelat */
+a.btn,
+a.btn:visited,
+a.btn:hover,
+a.btn:active,
+a.btn-primary,
+a.btn-primary:visited,
+a.btn-primary:hover,
+a.btn-primary:active {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    text-decoration: none !important;
+}
+
+/* Tombol dengan background krem atau putih */
+a.btn-outline,
+a.btn-outline:visited,
+a.btn-outline:hover,
+a.btn-outline:active,
+a.btn-secondary,
+a.btn-secondary:visited,
+a.btn-secondary:hover,
+a.btn-secondary:active {
+    color: #633b27 !important;
+    opacity: 1 !important;
+    text-decoration: none !important;
+}
+
+/* =====================================
+   PERBAIKAN FOOTER COFNA
+===================================== */
+
+footer a,
+footer a:visited {
+    color: #f8f0e6 !important;
+    text-decoration: none !important;
+    opacity: 1 !important;
+}
+
+footer a:hover,
+footer a:active {
+    color: #d99b64 !important;
+    text-decoration: none !important;
+}
+
+/* Pastikan teks footer tetap terlihat */
+footer,
+footer p,
+footer h3,
+footer h4,
+footer span {
+    opacity: 1;
+}
+
+/* Jika footer menggunakan class khusus */
+.footer a,
+.footer a:visited {
+    color: #f8f0e6 !important;
+    text-decoration: none !important;
+}
+
+.footer a:hover,
+.footer a:active {
+    color: #d99b64 !important;
+}
+
+/* ==========================================
+   FIX WARNA TOMBOL COFNA
+   ========================================== */
+
+/* Tombol utama di halaman Home */
+.btn-primary,
+.btn-primary:visited,
+.btn-primary:hover,
+.btn-primary:active,
+.highlight-btn,
+.highlight-btn:visited,
+.highlight-btn:hover,
+.highlight-btn:active,
+.about-main-btn,
+.about-main-btn:visited,
+.about-main-btn:hover,
+.about-main-btn:active,
+.about-final > a,
+.about-final > a:visited,
+.about-final > a:hover,
+.about-final > a:active {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-decoration: none !important;
+    opacity: 1 !important;
+}
+
+/* Pastikan tulisan di dalam tombol ikut terang */
+.btn-primary *,
+.highlight-btn *,
+.about-main-btn *,
+.about-final > a * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Tombol Lihat Menu di bagian highlight */
+.highlight-btn {
+    background: #60351f !important;
+}
+
+/* Tombol Pesan Sekarang */
+.btn-primary {
+    background: #60351f !important;
+}
+
+/* Tombol Jelajahi Menu */
+.about-main-btn {
+    background: #60351f !important;
+}
+
+/* Tombol CTA halaman Tentang Kami */
+.about-final > a {
+    background: #60351f !important;
+    display: inline-block;
+}
+
+/* Tombol outline tetap cokelat karena background-nya terang */
+.btn-secondary,
+.btn-secondary:visited,
+.about-outline-btn,
+.about-outline-btn:visited {
+    color: #60351f !important;
+    -webkit-text-fill-color: #60351f !important;
+    text-decoration: none !important;
+}
+
+/* ==========================================
+   FIX LINK FOOTER
+   ========================================== */
+
+.cofna-footer .footer-column a,
+.cofna-footer .footer-column a:visited {
+    color: #f8f0e6 !important;
+    -webkit-text-fill-color: #f8f0e6 !important;
+    text-decoration: none !important;
+}
+
+.cofna-footer .footer-column a:hover {
+    color: #d99b64 !important;
+    -webkit-text-fill-color: #d99b64 !important;
+}
+
+/* Teks kontak dan informasi footer */
+.cofna-footer .footer-column p {
+    color: #f8f0e6 !important;
+}
+
+/* Link sosial media */
+.cofna-footer .footer-social a,
+.cofna-footer .footer-social a:visited {
+    color: #f8f0e6 !important;
+    -webkit-text-fill-color: #f8f0e6 !important;
+}
+
+/* ==========================================
+   FIX LINK BEST SELLER
+   ========================================== */
+
+.best-seller .section-heading > a,
+.best-seller .section-heading > a:visited {
+    color: #60351f !important;
+    -webkit-text-fill-color: #60351f !important;
+    text-decoration: none !important;
+}
+
+/* ==============================
+   FOOTER LINK - COFNA
+============================== */
+
+/* Samakan warna semua link footer dengan Jakarta, Indonesia */
+.cofna-footer .footer-column a {
+    color: #d6bca8 !important;
+    text-decoration: none;
+    display: inline-block;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Efek saat kursor diarahkan ke tulisan */
+.cofna-footer .footer-column a:hover {
+    color: #c98245 !important;
+    transform: translateX(5px);
+}
+
+/* Warna tulisan informasi kontak */
+.cofna-footer .footer-column p {
+    color: #d6bca8;
+}
+
+/* Animasi halus pada semua link footer */
+.cofna-footer .footer-column a:focus-visible {
+    color: #c98245 !important;
+    outline: 1px solid #c98245;
+    outline-offset: 4px;
+}
+
+/* Animasi saat kursor diarahkan ke ikon sosial */
+.cofna-footer .footer-social a {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.cofna-footer .footer-social a:hover {
+    background-color: #c98245;
+    color: #ffffff;
+    transform: translateY(-4px);
+}
+
+/* Warna link footer sama dengan tagline COFNA */
+.cofna-footer .footer-column a {
+    color: #e0c7b2 !important;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animasi hover */
+.cofna-footer .footer-column a:hover {
+    color: #c98245 !important;
+    transform: translateX(5px);
+}
+
+/* =====================================
+   FOOTER COFNA - WARNA & HOVER LINK
+===================================== */
+
+/* Samakan warna link dengan tulisan Jakarta, Indonesia */
+.cofna-footer .footer-column a,
+.cofna-footer .footer-column a:visited {
+    color: #d6bca8 !important;
+    -webkit-text-fill-color: #d6bca8 !important;
+    text-decoration: none !important;
+
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animasi saat kursor diarahkan ke link */
+.cofna-footer .footer-column a:hover {
+    color: #c98245 !important;
+    -webkit-text-fill-color: #c98245 !important;
+    transform: translateX(5px);
+}
+
+/* Warna tulisan kontak, termasuk Jakarta */
+.cofna-footer .footer-column p {
+    color: #d6bca8 !important;
+    -webkit-text-fill-color: #d6bca8 !important;
+}
+
+/* Warna judul kolom tetap putih */
+.cofna-footer .footer-column h3 {
+    color: #ffffff !important;
+}
+
+/* Efek fokus saat navigasi dengan keyboard */
+.cofna-footer .footer-column a:focus-visible {
+    color: #c98245 !important;
+    outline: 1px solid #c98245;
+    outline-offset: 4px;
+}
+/* Tombol Kembali ke Home */
+.success-btn {
+    color: #fffaf5 !important;
+    background-color: #60351f !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Animasi saat kursor diarahkan ke tombol */
+.success-btn:hover {
+    background-color: #8b5738 !important;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(96, 53, 31, 0.2);
+}
+
+/* Efek saat tombol diklik */
+.success-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Navbar halaman pesanan berhasil */
+.navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar .nav-menu a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 12px 18px;
+    border-radius: 30px;
+    color: #60351f;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-menu a:hover {
+    background-color: #f5e4d2;
+    color: #60351f;
+    transform: translateY(-2px);
+}
+
+.navbar .nav-menu a:active {
+    transform: scale(0.97);
+}
+
+.navbar .nav-menu #cart-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    padding: 0 5px;
+    border-radius: 50%;
+    background-color: #c98b4b;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* Navbar lebih kecil */
+.navbar {
+    padding: 13px 5%;
+}
+
+.navbar .logo {
+    font-size: 33px;
+}
+
+.navbar .nav-menu {
+    gap: 9px;
+}
+
+.navbar .nav-menu a {
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+.navbar .nav-menu #cart-count {
+    min-width: 21px;
+    height: 21px;
+    font-size: 12px;
+}

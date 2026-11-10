@@ -1,0 +1,796 @@
+<?php
+session_start();
+
+$sudahLogin = isset($_SESSION['id_user']);
+?>
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - COFNA</title>
+
+    <link rel="stylesheet" href="../css_cofna/cofna.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            COFNA<span>.</span>
+        </div>
+
+        <nav class="nav-menu">
+
+            <a href="home_cofna.php">
+                🏠 Home
+            </a>
+
+            <a href="../menu.php">
+                ☕ Menu
+            </a>
+
+            <a href="keranjang_cofna.php">
+                🛒 Keranjang
+                <span id="cart-count">0</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HEADER CHECKOUT
+    ========================== -->
+
+    <section class="checkout-header">
+
+        <div>
+
+            <span>
+                ✦ COFNA CHECKOUT
+            </span>
+
+            <h1>
+                Selesaikan
+                <em>Pesananmu</em>
+            </h1>
+
+            <p>
+                Bayar sekarang, lalu tinggal ambil pesananmu.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CHECKOUT
+    ========================== -->
+
+    <main class="checkout-container">
+
+
+        <!-- =========================
+             BAGIAN KIRI
+        ========================== -->
+
+        <section class="checkout-form">
+
+
+            <!-- DATA PEMESAN -->
+
+            <div class="checkout-section-title">
+
+                <span>
+                    01
+                </span>
+
+                <div>
+
+                    <h2>
+                        Data Pemesan
+                    </h2>
+
+                    <p>
+                        Isi data untuk pesananmu.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+    <label for="catatan">Catatan Pesanan (opsional)</label>
+    <textarea
+        id="catatan"
+        name="catatan"
+        placeholder="Contoh: Less ice, tanpa gula..."
+        rows="4"
+    ></textarea>
+</div>
+
+            <!-- =========================
+                 PEMBAYARAN
+            ========================== -->
+
+            <div class="checkout-section-title payment-title">
+
+                <span>
+                    02
+                </span>
+
+                <div>
+
+                    <h2>
+                        Pembayaran Digital
+                    </h2>
+
+                    <p>
+                        Bayar pesananmu terlebih dahulu.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="payment-options">
+
+
+                <!-- QRIS -->
+
+                <label class="payment-card">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="QRIS"
+                        checked
+                    >
+
+                    <div class="payment-icon">
+                        📱
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            QRIS
+                        </strong>
+
+                        <small>
+                            Bayar dengan scan QR
+                        </small>
+
+                    </div>
+
+                </label>
+
+
+
+                <!-- GOPAY -->
+
+                <label class="payment-card">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="GoPay"
+                    >
+
+                    <div class="payment-icon">
+                        💚
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            GoPay
+                        </strong>
+
+                        <small>
+                            Bayar menggunakan GoPay
+                        </small>
+
+                    </div>
+
+                </label>
+
+
+
+                <!-- DANA -->
+
+                <label class="payment-card">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="DANA"
+                    >
+
+                    <div class="payment-icon">
+                        💙
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            DANA
+                        </strong>
+
+                        <small>
+                            Bayar menggunakan DANA
+                        </small>
+
+                    </div>
+
+                </label>
+
+
+
+                <!-- OVO -->
+
+                <label class="payment-card">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="OVO"
+                    >
+
+                    <div class="payment-icon">
+                        💜
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            OVO
+                        </strong>
+
+                        <small>
+                            Bayar menggunakan OVO
+                        </small>
+
+                    </div>
+
+                </label>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             BAGIAN KANAN
+             RINGKASAN PESANAN
+        ========================== -->
+
+        <aside class="checkout-summary">
+
+
+            <div class="checkout-summary-title">
+
+                <h2>
+                    Ringkasan Pesanan
+                </h2>
+
+                <p>
+                    Periksa kembali pesananmu.
+                </p>
+
+            </div>
+
+
+
+            <!-- PRODUK -->
+
+            <div
+                id="checkout-items"
+                class="checkout-items"
+            >
+
+                <!-- Produk diisi JavaScript -->
+
+            </div>
+
+
+
+            <!-- SUBTOTAL -->
+
+            <div class="summary-row">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="checkout-subtotal">
+                    Rp0
+                </strong>
+
+            </div>
+
+
+
+            <!-- BIAYA LAYANAN -->
+
+            <div class="summary-row">
+
+                <span>
+                    Biaya layanan
+                </span>
+
+                <strong id="checkout-service">
+                    Rp0
+                </strong>
+
+            </div>
+
+
+
+            <!-- TOTAL -->
+
+            <div class="summary-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="checkout-total">
+                    Rp0
+                </strong>
+
+            </div>
+
+
+
+            <!-- TOMBOL -->
+
+            <button
+                type="button"
+                class="pay-now-btn"
+                onclick="goToPayment()"
+            >
+
+                Bayar Sekarang
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+            <a href="keranjang_cofna.php" class="back-payment">
+    &larr; Kembali ke Keranjang
+</a>
+
+
+        </aside>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="cofna-footer">
+
+
+        <div class="footer-main">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <h2>
+                    COFNA<span>.</span>
+                </h2>
+
+                <p>
+                    Pesan Dulu, Nikmati Tanpa Antre.
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#">
+                        ◎
+                    </a>
+
+                    <a href="#">
+                        ♪
+                    </a>
+
+                    <a href="#">
+                        ◉
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MENU -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Menu
+                </h3>
+
+                <a href="home_cofna.php">
+                    Home
+                </a>
+
+                <a href="../menu.php">
+                    Menu
+                </a>
+
+                <a href="keranjang_cofna.php">
+                    Keranjang
+                </a>
+
+            </div>
+
+
+
+            <!-- INFORMASI -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Informasi
+                </h3>
+
+                <a href="#">
+                    Tentang Kami
+                </a>
+
+                <a href="#">
+                    Syarat & Ketentuan
+                </a>
+
+                <a href="#">
+                    Kebijakan Privasi
+                </a>
+
+            </div>
+
+
+
+            <!-- KONTAK -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Kontak
+                </h3>
+
+                <p>
+                    hello@cofna.id
+                </p>
+
+                <p>
+                    +62 812-3456-7890
+                </p>
+
+                <p>
+                    Jakarta, Indonesia
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 COFNA. All Rights Reserved.
+            </p>
+
+            <p>
+                Made with ♡ by COFNA
+            </p>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT UTAMA
+    ========================== -->
+
+    <script src="../js_cofna/cofna.js"></script>
+
+
+
+    <!-- =========================
+         CHECKOUT JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+                loadCheckout();
+
+            }
+        );
+
+
+        function loadCheckout() {
+
+            const checkoutItems =
+                document.getElementById(
+                    "checkout-items"
+                );
+
+            const subtotalElement =
+                document.getElementById(
+                    "checkout-subtotal"
+                );
+
+            const serviceElement =
+                document.getElementById(
+                    "checkout-service"
+                );
+
+            const totalElement =
+                document.getElementById(
+                    "checkout-total"
+                );
+
+
+            if (!checkoutItems) {
+                return;
+            }
+
+
+            /* =========================
+               AMBIL CART
+            ========================== */
+
+            let cart =
+                JSON.parse(
+                    localStorage.getItem(
+                        "cofnaCart"
+                    )
+                ) || [];
+
+
+            /* =========================
+               CART KOSONG
+            ========================== */
+
+            if (cart.length === 0) {
+
+                checkoutItems.innerHTML = `
+
+                    <div class="checkout-empty">
+
+                        Keranjang kamu masih kosong ☕
+
+                        <br><br>
+
+                        <a href="../menu.php">
+                            Kembali ke Menu →
+                        </a>
+
+                    </div>
+
+                `;
+
+                subtotalElement.textContent = "Rp0";
+                serviceElement.textContent = "Rp0";
+                totalElement.textContent = "Rp0";
+
+                return;
+
+            }
+
+
+            checkoutItems.innerHTML = "";
+
+            let subtotal = 0;
+
+
+            /* =========================
+               TAMPILKAN PRODUK
+            ========================== */
+
+            cart.forEach(
+                function (item) {
+
+                    const nama =
+                        item.nama || "Menu COFNA";
+
+                    const harga =
+                        Number(
+                            item.harga || 0
+                        );
+
+                    const jumlah =
+                        Number(
+                            item.jumlah || 1
+                        );
+
+                    const totalItem =
+                        harga * jumlah;
+
+                    subtotal += totalItem;
+
+
+                    const itemElement =
+                        document.createElement(
+                            "div"
+                        );
+
+                    itemElement.className =
+                        "checkout-item";
+
+
+                    /* =========================
+                       GAMBAR MENU
+                    ========================== */
+
+                    let gambar = "";
+                    
+                    if (item.gambar) {
+                        if (item.gambar.includes("/")) {
+                             gambar = item.gambar;
+                            } else {
+                                gambar = "../image_cofna/" + item.gambar;
+                            }
+                        }
+                        
+                    itemElement.innerHTML = `
+
+                        <div class="checkout-item-image">
+
+                            ${
+                                gambar
+                                ?
+                                `
+                                    <img
+                                        src="${gambar}"
+                                        alt="${nama}"
+                                    >
+                                `
+                                :
+                                `
+                                    <div class="no-image">
+                                        ☕
+                                    </div>
+                                `
+                            }
+
+                        </div>
+
+
+                        <div class="checkout-item-info">
+
+                            <h3>
+                                ${nama}
+                            </h3>
+
+                            <span>
+                                ${jumlah} ×
+                                ${formatRupiahCOFNA(harga)}
+                            </span>
+
+                        </div>
+
+
+                        <div class="checkout-item-price">
+
+                            ${formatRupiahCOFNA(totalItem)}
+
+                        </div>
+
+                    `;
+
+
+                    checkoutItems.appendChild(
+                        itemElement
+                    );
+
+                }
+            );
+
+
+            /* =========================
+               TOTAL
+            ========================== */
+
+            const serviceFee = 2000;
+
+            const total =
+                subtotal + serviceFee;
+
+
+            subtotalElement.textContent =
+                formatRupiahCOFNA(
+                    subtotal
+                );
+
+            serviceElement.textContent =
+                formatRupiahCOFNA(
+                    serviceFee
+                );
+
+            totalElement.textContent =
+                formatRupiahCOFNA(
+                    total
+                );
+
+        }
+
+
+        /* =========================
+           FORMAT RUPIAH
+        ========================== */
+
+        function formatRupiahCOFNA(number) {
+
+            return "Rp" +
+                Number(number)
+                    .toLocaleString("id-ID");
+
+        }
+
+    </script>
+
+    <script>
+const cofnaSudahLogin = <?= json_encode($sudahLogin) ?>;
+
+const tombolBayar = document.querySelector('.pay-now-btn');
+
+tombolBayar.addEventListener('click', function (event) {
+    if (!cofnaSudahLogin) {
+        event.stopImmediatePropagation();
+        event.preventDefault();
+
+        alert('Silakan login terlebih dahulu untuk melanjutkan pembayaran.');
+        window.location.href = 'login.php';
+    }
+}, true);
+
+</script>
+
+</body>
+
+</html>

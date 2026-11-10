@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Keranjang - COFNA</title>
+
+   <link rel="stylesheet" href="../css_cofna/cofna.css">
+
+<style>
+    .navbar {
+        position: relative;
+        z-index: 9999;
+    }
+
+    .login-btn {
+        position: relative;
+        z-index: 10000;
+        cursor: pointer;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            COFNA<span>.</span>
+        </div>
+
+        <nav class="nav-menu"></nav>
+
+    <a href="home_cofna.html">
+        🏠 Home
+    </a>
+
+    <a href="../menu.php">
+        ☕ Menu
+    </a>
+
+    <a href="keranjang_cofna.html" class="nav-active">
+        🛒 Keranjang
+        <span id="cart-count">0</span>
+    </a>
+
+    <a href="tentang_kami.html">
+    👥 Tentang Kami
+    </a>
+
+    <a href="riwayat_pesanan.php">
+        📋 Riwayat Pesanan</a>
+
+</nav>
+        <a href="login.php" class="logout-btn">
+    👤 Login
+</a>
+
+         <a href="html_cofna/logout.php" class="logout-btn">
+        🚪 Logout
+    </a>
+    
+    </header>
+
+
+    <!-- ================= CART HEADER ================= -->
+
+    <section class="cart-header">
+
+        <div>
+
+            <span>
+                ✦ COFNA CART
+            </span>
+
+            <h1>
+                Keranjang
+                <em>Pesananmu</em>
+            </h1>
+
+            <p>
+                Periksa kembali pesananmu sebelum melakukan checkout.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CART CONTENT ================= -->
+
+    <main class="cart-container">
+
+
+        <!-- DAFTAR PRODUK -->
+
+        <section class="cart-products">
+
+            <div class="cart-title">
+
+                <h2>
+                    Pesanan Kamu
+                </h2>
+
+                <span id="cart-total-item">
+                    0 item
+                </span>
+
+            </div>
+
+
+            <!-- PRODUK AKAN MUNCUL DARI JAVASCRIPT -->
+
+            <div id="cart-items">
+
+                <div class="empty-cart">
+
+                    <div class="empty-cart-icon">
+                        🛒
+                    </div>
+
+                    <h3>
+                        Keranjangmu masih kosong
+                    </h3>
+
+                    <p>
+                        Yuk pilih minuman favoritmu dulu!
+                    </p>
+
+                    <a
+                        href="../menu.php"
+                        class="btn-primary"
+                    >
+                        Lihat Menu →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RINGKASAN PESANAN -->
+
+        <aside class="cart-summary">
+
+            <h2>
+                Ringkasan Pesanan
+            </h2>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="subtotal">
+                    Rp0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Biaya layanan
+                </span>
+
+                <strong id="service-fee">
+                    Rp0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-line"></div>
+
+
+            <div class="summary-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cart-grand-total">
+                    Rp0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="checkout-btn"
+                onclick="checkout()"
+            >
+                Checkout
+                <span>→</span>
+            </button>
+
+
+            <a
+                href="../menu.php"
+                class="continue-shopping"
+            >
+                ← Lanjut Belanja
+            </a>
+
+        </aside>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="cofna-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <h2>
+                    COFNA<span>.</span>
+                </h2>
+
+                <p>
+                    Pesan Dulu, Nikmati Tanpa Antre.
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#">◎</a>
+                    <a href="#">♪</a>
+                    <a href="#">◉</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Menu</h3>
+
+                <a href="home_cofna.html">
+                    Home
+                </a>
+
+                <a href="../menu.php">
+                    Menu
+                </a>
+
+                <a href="keranjang_cofna.html">
+                    Keranjang
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Informasi</h3>
+
+                <a href="#">
+                    Tentang Kami
+                </a>
+
+                <a href="#">
+                    Syarat & Ketentuan
+                </a>
+
+                <a href="#">
+                    Kebijakan Privasi
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Kontak</h3>
+
+                <p>
+                    hello@cofna.id
+                </p>
+
+                <p>
+                    +62 812-3456-7890
+                </p>
+
+                <p>
+                    Jakarta, Indonesia
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 COFNA. All Rights Reserved.
+            </p>
+
+            <p>
+                Made with ♡ by COFNA
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js_cofna/cofna.js?v=2"></script>
+
+</body>
+
+</html>

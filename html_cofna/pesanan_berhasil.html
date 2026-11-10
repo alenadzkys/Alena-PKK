@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pesanan Berhasil - COFNA</title>
+
+    <link rel="stylesheet" href="../css_cofna/cofna.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    
+<header class="navbar">
+    <div class="logo">
+        COFNA<span>.</span>
+    </div>
+
+    <nav class="nav-menu">
+        <a href="home_cofna.php">
+            🏠 Home
+        </a>
+
+        <a href="../menu.php">
+            ☕ Menu
+        </a>
+
+        <a href="keranjang_cofna.php">
+            🛒 Keranjang <span id="cart-count">0</span>
+        </a>
+    </nav>
+</header>
+
+
+
+    <!-- =========================
+         PESANAN BERHASIL
+    ========================== -->
+
+    <main class="success-page">
+
+        <div class="success-card">
+
+
+            <!-- ICON -->
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+
+            <span class="success-label">
+                COFNA ORDER
+            </span>
+
+
+            <h1>
+                Pesanan
+                <em>Berhasil!</em>
+            </h1>
+
+
+            <p>
+                Pembayaran kamu sudah berhasil.
+                Pesananmu sedang diproses oleh COFNA.
+            </p>
+
+
+
+            <!-- =========================
+                 NOMOR PESANAN
+            ========================== -->
+
+            <div class="order-number">
+
+                <span>
+                    NOMOR PESANAN
+                </span>
+
+                <strong id="order-number">
+                    -
+                </strong>
+
+            </div>
+
+
+
+            <!-- =========================
+                 INFO PESANAN
+            ========================== -->
+
+            <div class="success-info">
+
+
+                <!-- PEMBAYARAN -->
+
+                <div>
+
+                    <span>
+                        💳
+                    </span>
+
+                    <p>
+
+                        Pembayaran<br>
+
+                        <strong id="payment-method">
+                            -
+                        </strong>
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- STATUS -->
+
+                <div>
+
+                    <span>
+                        ☕
+                    </span>
+
+                    <p>
+
+                        Status Pesanan<br>
+
+                        <strong id="order-status-text">
+                            Sedang Diproses
+                        </strong>
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- TOTAL -->
+
+                <div>
+
+                    <span>
+                        💰
+                    </span>
+
+                    <p>
+
+                        Total Pembayaran<br>
+
+                        <strong id="order-total">
+                            Rp0
+                        </strong>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 STATUS PESANAN
+            ========================== -->
+
+            <div class="order-status">
+
+                <h2>
+                    Status Pesanan
+                </h2>
+
+
+
+                <!-- =====================
+                     1. PEMBAYARAN
+                ====================== -->
+
+                <div class="status-step active">
+
+                    <div class="status-icon">
+                        ✓
+                    </div>
+
+                    <div class="status-text">
+
+                        <strong id="step-payment-title">
+                            Pembayaran Berhasil
+                        </strong>
+
+                        <small id="step-payment-desc">
+                            Pembayaran sudah diterima
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="status-line"></div>
+
+
+
+                <!-- =====================
+                     2. DIPROSES
+                ====================== -->
+
+                <div class="status-step active">
+
+                    <div class="status-icon">
+                        ☕
+                    </div>
+
+                    <div class="status-text">
+
+                        <strong id="step-process-title">
+                            Pesanan Diproses
+                        </strong>
+
+                        <small id="step-process-desc">
+                            Pesanan sedang diproses oleh COFNA
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="status-line"></div>
+
+
+
+                <!-- =====================
+                     3. DIBUAT
+                ====================== -->
+
+                <div class="status-step">
+
+                    <div class="status-icon">
+                        🧑‍🍳
+                    </div>
+
+                    <div class="status-text">
+
+                        <strong id="step-making-title">
+                            Sedang Dibuat
+                        </strong>
+
+                        <small id="step-making-desc">
+                            Barista sedang menyiapkan pesanan
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="status-line"></div>
+
+
+
+                <!-- =====================
+                     4. SIAP DIAMBIL
+                ====================== -->
+
+                <div class="status-step">
+
+                    <div class="status-icon">
+                        📦
+                    </div>
+
+                    <div class="status-text">
+
+                        <strong id="step-ready-title">
+                            Siap Diambil
+                        </strong>
+
+                        <small id="step-ready-desc">
+                            Pesanan siap diambil di COFNA
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="status-line"></div>
+
+
+
+                <!-- =====================
+                     5. SELESAI
+                ====================== -->
+
+                <div class="status-step">
+
+                    <div class="status-icon">
+                        ✓
+                    </div>
+
+                    <div class="status-text">
+
+                        <strong id="step-done-title">
+                            Selesai
+                        </strong>
+
+                        <small id="step-done-desc">
+                            Pesanan sudah selesai
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 NOTICE
+            ========================== -->
+
+            <div class="success-notice">
+
+                <span>
+                    📌
+                </span>
+
+                <p>
+
+                    Saat pesanan sudah siap,
+                    tunjukkan
+                    <strong>nomor pesanan</strong>
+                    ini kepada kasir COFNA
+                    saat mengambil minumanmu.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================
+                 BUTTON HOME
+            ========================== -->
+
+            <a
+                href="home_cofna.php"
+                class="success-btn"
+            >
+                Kembali ke Home →
+            </a>
+
+
+
+            <!-- =========================
+                 BUTTON PESAN LAGI
+            ========================== -->
+
+            <a
+                href="../menu.php"
+                class="success-menu"
+            >
+                Pesan Lagi
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================
+         JAVASCRIPT COFNA
+    ========================== -->
+
+    <script src="../js_cofna/cofna.js"></script>
+
+
+
+    <!-- =========================
+         JAVASCRIPT STATUS PESANAN
+    ========================== -->
+
+    <script>
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+
+
+            // =========================
+            // AMBIL DATA PESANAN
+            // =========================
+
+            const savedOrder =
+                localStorage.getItem(
+                    "cofnaOrder"
+                );
+
+
+
+            // =========================
+            // CEK DATA PESANAN
+            // =========================
+
+            if (!savedOrder) {
+
+                document.getElementById(
+                    "order-number"
+                ).textContent = "-";
+
+
+                document.getElementById(
+                    "payment-method"
+                ).textContent = "-";
+
+
+                document.getElementById(
+                    "order-total"
+                ).textContent = "Rp0";
+
+
+                document.getElementById(
+                    "order-status-text"
+                ).textContent =
+                    "Data Tidak Ditemukan";
+
+
+                return;
+
+            }
+
+
+
+            // =========================
+            // PARSE DATA
+            // =========================
+
+            const order =
+                JSON.parse(savedOrder);
+
+
+
+            // =========================
+            // NOMOR PESANAN
+            // =========================
+
+            const nomorPesanan =
+                order.nomorPesanan ||
+                order.nomor_pesanan ||
+                "-";
+
+
+            document.getElementById(
+                "order-number"
+            ).textContent =
+                nomorPesanan;
+
+
+
+            // =========================
+            // METODE PEMBAYARAN
+            // =========================
+
+            document.getElementById(
+                "payment-method"
+            ).textContent =
+                order.payment || "-";
+
+
+
+            // =========================
+            // TOTAL PEMBAYARAN
+            // =========================
+
+            const total =
+                Number(
+                    order.total || 0
+                );
+
+
+            document.getElementById(
+                "order-total"
+            ).textContent =
+                "Rp" +
+                total.toLocaleString(
+                    "id-ID"
+                );
+
+
+
+            // =========================
+            // CEK STATUS PESANAN
+            // =========================
+
+            function cekStatusPesanan() {
+
+
+                if (
+                    nomorPesanan === "-" ||
+                    nomorPesanan === ""
+                ) {
+
+                    return;
+
+                }
+
+
+
+                fetch(
+                    "cek_status_pesanan.php?nomor_pesanan=" +
+                    encodeURIComponent(
+                        nomorPesanan
+                    )
+                )
+
+
+                .then(
+                    function (response) {
+
+
+                        if (!response.ok) {
+
+                            throw new Error(
+                                "Server error: " +
+                                response.status
+                            );
+
+                        }
+
+
+                        return response.json();
+
+                    }
+                )
+
+
+                .then(
+                    function (data) {
+
+
+                        console.log(
+                            "STATUS PESANAN:",
+                            data
+                        );
+
+
+
+                        // =========================
+                        // JIKA PESANAN TIDAK DITEMUKAN
+                        // =========================
+
+                        if (!data.success) {
+
+                            console.log(
+                                "Pesanan tidak ditemukan."
+                            );
+
+                            return;
+
+                        }
+
+
+
+                        // =========================
+                        // DATA PESANAN
+                        // =========================
+
+                        const pesanan =
+                            data.order;
+
+
+
+                        // =========================
+                        // STATUS
+                        // =========================
+
+                        const status =
+                            pesanan.status ||
+                            "Sedang Diproses";
+
+
+
+                        // =========================
+                        // UPDATE STATUS UTAMA
+                        // =========================
+
+                        document.getElementById(
+                            "order-status-text"
+                        ).textContent =
+                            status;
+
+
+
+                        // =========================
+                        // UPDATE LOCAL STORAGE
+                        // =========================
+
+                        order.status =
+                            status;
+
+
+                        localStorage.setItem(
+                            "cofnaOrder",
+                            JSON.stringify(order)
+                        );
+
+
+
+                        // =========================
+                        // UPDATE STEP
+                        // =========================
+
+                        updateStatusStep(
+                            status
+                        );
+
+                    }
+                )
+
+
+                .catch(
+                    function (error) {
+
+                        console.error(
+                            "Gagal mengambil status:",
+                            error
+                        );
+
+                    }
+                );
+
+            }
+
+
+
+            // =========================
+            // UPDATE STATUS STEP
+            // =========================
+
+            function updateStatusStep(
+                status
+            ) {
+
+
+                const steps =
+                    document.querySelectorAll(
+                        ".order-status .status-step"
+                    );
+
+
+
+                if (
+                    steps.length === 0
+                ) {
+
+                    return;
+
+                }
+
+
+
+                // =========================
+                // URUTAN STATUS
+                // =========================
+
+                const statusIndex = {
+
+                    "Sedang Diproses": 1,
+
+                    "Sedang Dibuat": 2,
+
+                    "Siap Diambil": 3,
+
+                    "Selesai": 4
+
+                };
+
+
+
+                const current =
+                    statusIndex[status] || 1;
+
+
+
+                // =========================
+                // DESKRIPSI STATUS
+                // =========================
+
+                const statusDescription = {
+
+
+                    "Sedang Diproses": {
+
+                        process:
+                            "Pesanan sedang diproses oleh COFNA",
+
+                        making:
+                            "Pesanan akan segera dibuat oleh barista",
+
+                        ready:
+                            "Pesanan akan tersedia setelah selesai dibuat",
+
+                        done:
+                            "Pesanan belum selesai"
+
+                    },
+
+
+                    "Sedang Dibuat": {
+
+                        process:
+                            "Pesanan sudah masuk ke proses pembuatan",
+
+                        making:
+                            "Barista sedang menyiapkan pesanan",
+
+                        ready:
+                            "Pesanan akan siap setelah selesai dibuat",
+
+                        done:
+                            "Pesanan belum selesai"
+
+                    },
+
+
+                    "Siap Diambil": {
+
+                        process:
+                            "Pesanan sudah selesai diproses",
+
+                        making:
+                            "Pesanan sudah selesai dibuat",
+
+                        ready:
+                            "Pesanan siap diambil di COFNA",
+
+                        done:
+                            "Pesanan menunggu untuk diselesaikan"
+
+                    },
+
+
+                    "Selesai": {
+
+                        process:
+                            "Pesanan sudah selesai diproses",
+
+                        making:
+                            "Pesanan sudah selesai dibuat",
+
+                        ready:
+                            "Pesanan sudah diambil",
+
+                        done:
+                            "Pesanan telah selesai"
+
+                    }
+
+                };
+
+
+
+                const desc =
+                    statusDescription[status] ||
+                    statusDescription[
+                        "Sedang Diproses"
+                    ];
+
+
+
+                // =========================
+                // AMBIL ELEMENT DESKRIPSI
+                // =========================
+
+                const processDesc =
+                    document.getElementById(
+                        "step-process-desc"
+                    );
+
+
+                const makingDesc =
+                    document.getElementById(
+                        "step-making-desc"
+                    );
+
+
+                const readyDesc =
+                    document.getElementById(
+                        "step-ready-desc"
+                    );
+
+
+                const doneDesc =
+                    document.getElementById(
+                        "step-done-desc"
+                    );
+
+
+
+                // =========================
+                // UPDATE DESKRIPSI
+                // =========================
+
+                if (processDesc) {
+
+                    processDesc.textContent =
+                        desc.process;
+
+                }
+
+
+                if (makingDesc) {
+
+                    makingDesc.textContent =
+                        desc.making;
+
+                }
+
+
+                if (readyDesc) {
+
+                    readyDesc.textContent =
+                        desc.ready;
+
+                }
+
+
+                if (doneDesc) {
+
+                    doneDesc.textContent =
+                        desc.done;
+
+                }
+
+
+
+                // =========================
+                // RESET SEMUA STEP
+                // =========================
+
+                steps.forEach(
+                    function (step, index) {
+
+
+                        step.classList.remove(
+                            "active",
+                            "completed"
+                        );
+
+
+
+                        const icon =
+                            step.querySelector(
+                                ".status-icon"
+                            );
+
+
+
+                        // =========================
+                        // PEMBAYARAN
+                        // =========================
+
+                        if (index === 0) {
+
+
+                            step.classList.add(
+                                "completed"
+                            );
+
+
+                            if (icon) {
+
+                                icon.textContent =
+                                    "✓";
+
+                            }
+
+
+                            return;
+
+                        }
+
+
+
+                        // =========================
+                        // STEP SEBELUMNYA
+                        // =========================
+
+                        if (
+                            index < current
+                        ) {
+
+
+                            step.classList.add(
+                                "completed"
+                            );
+
+
+                            if (icon) {
+
+                                icon.textContent =
+                                    "✓";
+
+                            }
+
+                        }
+
+
+
+                        // =========================
+                        // STEP AKTIF
+                        // =========================
+
+                        else if (
+                            index === current
+                        ) {
+
+
+                            step.classList.add(
+                                "active"
+                            );
+
+                        }
+
+                    }
+                );
+
+            }
+
+
+
+            // =========================
+            // CEK STATUS PERTAMA KALI
+            // =========================
+
+            cekStatusPesanan();
+
+
+
+            // =========================
+            // CEK SETIAP 5 DETIK
+            // =========================
+
+            setInterval(
+                cekStatusPesanan,
+                5000
+            );
+
+
+        }
+    );
+
+    </script>
+
+
+</body>
+
+</html>
